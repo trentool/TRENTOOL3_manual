@@ -1,0 +1,32 @@
+\begin{table}[H]
+\small
+\caption[Parameters \texttt{cfgTEA}]{Parameters for the configuration structure \texttt{cfgTEA} of the function \texttt{InteractionDelayReconstruction\_analyze.m} (all parameters are given as strings) (TRENTOOL Version 3.0)} 
+\begin{tabularx}{\textwidth}{lX} \toprule
+\textbf{field name} & \textbf{description} \\ \midrule
+\verb+select_opt_u+ & selects the way the optimal u is determined options are: \\
+                 &        \verb+'min_p'+ - optimal predictiontime u is the one
+                         with the largest statistical distance (smallest
+                         randomization p-value) to  surrogate data.
+                         This option might be problematic with
+                         respect to later testing of existence of
+                         a link if not used on independent data first. \\
+
+                 &        \verb+'max_TEdiff'+ - optimal predictiontime u is the
+                         one with the largest difference in the test
+                         statistic between data and surrogates.
+                         This option might be problematic if different
+                         predictiontimes u lead to vastly different
+                         embedding via the optimization in the ragwitz
+                         criterion. \\
+                                                                              
+                 &       \verb+'product_evidence'+ - optimal predictiontime u is
+                        the one which maximes the product (1-p)*TEdiff.
+                        is is a statistically weighted measure of
+                        TEdifferences between data and surrogates
+                        (experimental feature)\\
+\rowcolor{Gray}
+\verb+select_opt_u_pos+ & 'shortest' select the shortest u if multiple u's optimize the target quantity (minimum p, maximum TE difference); 'longest' select the longest u that optimizes the target quantity. \\
+\bottomrule
+\label{tab:cfgTEA}
+\end{tabularx}
+\end{table}

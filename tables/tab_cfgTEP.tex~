@@ -1,0 +1,51 @@
+\begin{table}[H]
+\small
+\caption[Parameters \texttt{cfgTEP}]{Prameters for the configuration structure \texttt{cfgTEP.} of the functions \texttt{TEprepare.m}, \texttt{TEgroup\_prepare.m} and \texttt{InteractionDelayReconstruction\_calculate} (TRENTOOL Version 3.0)} 
+\makebox[\textwidth]{
+\begin{tabularx}{1.1\textwidth}{lp{1.2cm}L{1.3cm}p{1.1cm}X}\toprule 
+\label{tab:cfgTEP}
+\textbf{field name}& \textbf{default value} & \textbf{data type} & \textbf{units} & \textbf{description} \\ \midrule
+\rowcolor{Gray}
+\verb+sgncmb+ & & string & & cell array of channel pairs to be analyzed\\
+\verb+channel+ & & string & & cell array of channel names, from which TRENTOOL will construct all possible pairs for later analysis\\
+%\verb+Path2TSTOOL+ & & string & & path to the folder including the required TSTOOL package\\
+\rowcolor{Gray}
+\verb+toi+ & & double & seconds & 1x2-vector with first and last time point of the time range of interest \\
+\verb+TEcalctype+ & \verb+'VW_ds'+ & string & & \texttt{'VW\_ds'}: Estimator guaranteeing optimal self prediction (eq. \ref{eq:TE_u}, see \cite{wibral2013}). \verb+'V'+ and \verb+'VW'+ estimators are no longer supported\\
+\rowcolor{Gray}
+\verb+predictiontime_u+ & & integer & milli-seconds & assumed information transfer delay $u$ between source and target time series (Fig. \ref{fig:TE_concept}) \\
+\verb+ensemblemethod+ & \verb+'no'+ & string & & Use of the ensemble-method for (time-resolved) TE estimation, see sec. \ref{sec:ensemble_method} \cite{wollstadt2013} (\verb+'yes'+ or \verb+'no'+). \\
+\rowcolor{Gray}
+\verb+kth_neighbors+ & \verb+4+ & integer & & number of neighbors for fixed mass search (controls balance of bias/statistical errors) \\
+\verb+TheilerT+ & \verb+'ACT'+ & integer or string 'ACT' & & number of temporal neighbors excluded to avoid serial correlations (Theiler correction)\\
+\rowcolor{Gray}
+\verb+maxlag+ & \verb+1000+ & integer & samples & the range of lags for computing the ACT: from -MAXLAG to MAXLAG \\ 
+\verb+optimizemethod+ & & string & & define method for parameter optimization: 'ragwitz' \\%or 'cao'\\
+\rowcolor{Gray}
+\verb+trialselect+ & \verb+'ACT'+ & string & & selecting trials: 'no' uses all available trials, 'range' uses trials from a separately defined range (fields \texttt{.trial\_from} and \texttt{trial\_to}), 'ACT' uses trials with an ACT lower than a given threshold (field \texttt{.actthresholdvalue})\\
+\verb+actthrvalue+ & & integer & & max threshold for the ACT for trial selection\\
+\rowcolor{Gray}
+\verb+trial_from+ & & integer & & first trial in case of range selection of trials\\
+\verb+trial_to+ & & integer & & last trial in case of range selection of trials\\
+\rowcolor{Gray}
+\verb+minnrtrials+ & & integer & & sets a minimum number of trials, that have to survive trial selection (if \verb+cfgTEP.trialselect = 'ACT'+ is set); if less trials survive trial selection, TE estimation is abortet\\ 
+\multicolumn{5}{l}{}\\
+\multicolumn{5}{l}{\textbf{Parameters needed for the use of Ragwitz' criterion for parameter optimization}}\\ \midrule
+\verb+ragdim+ & \verb+1 to 10+ & integer & & for Ragwitz: range of embedding dimensions to scan vector from 1 to n\\
+\rowcolor{Gray}
+\verb+ragtaurange+ & & double & units of act & for Ragwitz: 1x2-vector of min and max embedding delays \\
+\verb+ragtausteps+ & \verb+10+  & integer & &  for Ragwitz: number of equidistant steps in ragtaurange with a minimum of 5\\
+\rowcolor{Gray}
+\verb+flagNei+ & & string & & for Ragwitz: 'Range' or 'Mass' type of neighbor search\\
+\verb+sizeNei+ & & integer & & for Ragwitz: Radius or mass for the neighbor search according to \verb+flagNei+\\
+\rowcolor{Gray}
+\verb+repPred+ & & integer & & for Ragwitz: repPred represents the number of sample points for which the prediction is performed (it has to be smaller than $length(timeSeries)-(embedding dimension-1)*tau*ACT-u$ )\\ \bottomrule
+% \multicolumn{5}{l}{}\\
+% \multicolumn{5}{l}{\textbf{Parameters needed for the use of Cao criterion for parameter optimization$^{a}$}}\\ \midrule
+% \verb+caodim+ & \verb+1 to 10+ & integer & & for Cao: indicates the range of dimensions that is scanned using the Cao criterion to find the optimal dimension \\
+% \rowcolor{Gray}
+% \verb+caokth_neighbors+ & \verb+4+ & integer & & for Cao: number of neighbors for fixed mass search for cao (controls balance of bias/statistical errors) \\
+% \verb+tau+ & \verb+1.5+ & double & units of act & for Cao: embedding delay \\ 
+% \multicolumn{5}{p{\textwidth}}{$^a$ The cao criterion is not recommended for parameter optimization. The code for cao-optimization is no longer maintained and guaranteed to work vor TRENTOOL versions 3.0 and higher.}
+\end{tabularx}}
+\end{table}

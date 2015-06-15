@@ -1,0 +1,38 @@
+
+\noindent\makebox[\textwidth]{
+\begin{table}[H]
+\centering
+\caption[Results \texttt{.TEprepare}]{Results provided in the field \texttt{.TEprepare}, added to the data by \texttt{TEprepare.m} (TRENTOOL Version 2.0)} % TODO update this to version 3
+\begin{tabular}{p{3cm}p{3.5cm}p{1.5cm}p{1.1cm}p{5.5cm}} \toprule
+\textbf{field name} & \textbf{dimension} & \textbf{data type} & \textbf{units} & \textbf{description} \\ \midrule
+\verb+channelcombi+ & [no. channel combinations x 2] & integers & & cell array with channel indices specifying the channel combinations to be analyzed\\
+\rowcolor{Gray}
+\verb+channelcombilabel+ & \{no. channel combinations x 2 \} & strings & & cell array with channel labels specifying the channel combinations to be analyzed\\
+\verb+ACT+ & [no. channel combinations x 2 x no. trials] & integers & samples & array with the values of the auto correlation decay times of the channelcombinations\\
+\rowcolor{Gray}
+\verb+trials+ & \{no. channel combinations x 2\}[1 x no. trials] & integers & & cell array of integer arrays containing trials used for individual channel combinations for analysis\\
+\verb+ntrials+ & [no. channel combinations x 2] & integers & & integer array containing the number of trials used for individual channel combinations for analysis\\
+\rowcolor{Gray}
+\verb+optdimmattrial+ & [channelcombi x trial] & integer & & array with optimal embedding dimension for each trial\\
+\verb+optdimmat+ & [channelcombi x 1] & integer & & array with optimal embedding dimension for each channel combination (over trials)\\
+\rowcolor{Gray}
+\verb+optdim+ & scalar & integer & & max of the \verb+optdimmat+ which should be used as embedding dimension in the further steps\\
+\verb+timeindices+ & [1 x 2] & integer & samples & timeindices in samples (from \verb+cfg.toi+)\\
+\rowcolor{Gray}
+\verb+u_in_samples+ & scalar & integer & samples & interaction delay in sample points (from \verb+cfg.predictionstime_u+)\\
+\verb+cfg+ & & structure & & configuration structure \verb+cfgTEP+ provided by the user\\
+\rowcolor{Gray}
+\verb+maxact+ & scalar & integer & & maximum autocorrelation decay time of the targetchannels\\ 
+%\multicolumn{5}{l}{}\\
+%\multicolumn{5}{l}{\textbf{Parameters returned if ragwitz criterion was chosen for parameter optimization}}\\ \midrule
+\verb+opttaumat+ & [1 x channelcombi] & integer & & optimal embedding delays tau for each channel combination over trials\\
+\rowcolor{Gray}
+\verb+opttau+  & scalar & integer & & max of the opttaumat which should be used as embedding delay in the further steps\\
+% \multicolumn{5}{l}{}\\
+% \multicolumn{5}{l}{\textbf{Parameters returned if cao criterion was chosen for parameter optimization$^a$}}\\\midrule
+% \verb+nrreferencepoints+ & [no. channel combination x no. trial] & integer & & number of reference points for the cao calculation\\
+% \rowcolor{Gray}
+% \verb+cao+ & & structure & & Contains two arrays [no trials x no. channels x caodim] with the values E1 and E2 of the cao function\\ \bottomrule
+% \multicolumn{5}{p{\textwidth}}{$^a$ The cao criterion is not recommended for parameter optimization. The code for cao-optimization is no longer maintained and guaranteed to work vor TRENTOOL versions 3.0 and higher.}
+\end{tabular} \label{tab:TEpermvalues}
+\end{table}}

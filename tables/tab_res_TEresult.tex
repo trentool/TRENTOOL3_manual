@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption[Results \texttt{TEresult}]{Results provided in the structure \texttt{TEresult} saved to disk by '\texttt{TEsurrogatestats.m}' and '\texttt{TEsurrogatestats\_ensemble.m}' (TRENTOOL Version 3.3)}
+\begin{tabularx}{\textwidth}{lL{2.5cm}L{2cm}X}\toprule
+\textbf{field name} & \textbf{dimension} & \textbf{data type} & \textbf{description} \\ \midrule
+\texttt{TEmat} & [no. channel combinations x u x trial] & double & matrix of raw TE values \\ 
+	       & [no. channel combinations] & double & vector of raw TE values if the ensemble method is used for TE estimation\\ 
+\rowcolor{Gray}
+\texttt{MImat} & [no. channel combinations x u x trial] & double & matrix of rax mutual information values\\
+\rowcolor{Gray}
+	       & [no. channel combinations] & double & vector of raw MI values if the ensemble method is used for TE estimation\\ 
+\texttt{dimord} & & string &  dimension of TEmat and MImat\\
+\rowcolor{Gray}
+\texttt{cfg} &  & structure & configuration structure used for TE estimation (\texttt{cfgTESS}, see table \ref{tab:cfgTESS}) \\
+\texttt{trials} & & & trial numbers selected from raw data set \\
+\rowcolor{Gray}
+\texttt{act} & [no. channel combinations x 2 x no. trials] & integer & ACT matrix\\
+\texttt{sgncmb} & & structure & results of the function TEprepare from the input data \\ 
+ \bottomrule
+\end{tabularx} \label{tab:TEresult}
+\end{table}

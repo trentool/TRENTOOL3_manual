@@ -1,0 +1,38 @@
+\begin{table}[H]
+\small
+\caption[Parameters \texttt{cfgTESS}]{Parameters for the configuration structure \texttt{cfgTESS} of the functions \texttt{TEsurrogatestats.m}, \texttt{TEsurrogatestats\_ensemble.m} and \texttt{InteractionDelayReconstruction\_calculate.m} (TRENTOOL Version 3.0)} 
+\makebox[\textwidth]{
+\begin{tabularx}{1.1\textwidth}{p{2cm}p{2cm}p{1.1cm}X} \toprule
+\textbf{field name} & \textbf{default value} & \textbf{data type} & \textbf{description} \\ \midrule
+\verb+optdimusage+ & & string & 'maxdim' to use maximum of optimal embedding dimensions over all channels for all channels, or 'indivdim' to use the individual optimal dimension for each channel. In case of using ragwitz criterion also the optimal embedding delay tau per channelcombi is used. \\
+\rowcolor{Gray}
+\verb+dim+ & output TEprepare & integer & Value(s) for embedding dimension. This is automatically taken from the field \verb+TEprepare+ in the data (recommended!). Otherwise: scalar value (if \verb+cfgTEP.optdimusage = 'maxdim'+) or vector of size [channelcombi x 1] (if \verb+cfgTEP.optdimusage = 'indivdim'+).\\
+\verb+tau+ & output TEprepare & integer & Embedding delay in units of act (x*act). This is automatically taken from the field \verb+TEprepare+ in the data (recommended!). Otherwise: scalar value (if \verb+cfgTEP.optdimusage = 'maxdim'+) or vector of size [channelcombi x 1] (if \verb+cfgTEP.optdimusage = 'indivdim'+). Otherwise: \\ %TODO tau???
+\rowcolor{Gray}
+\verb+alpha+ & 0.05 & double & Significance level for statisatical permutation test \\
+\verb+surrogatetype+ & & string & Strategy for surrogate data creation: 'trialshuffling', 'trialreverse', 'blockresampling', 'blockreverse1','blockreverse2', or 'blockreverse3' (see section \ref{sec:TEsurrogatestats}).\\
+\rowcolor{Gray}
+\verb+extracond+ & & string & Perform conditioning in tansfer entropy formula on additional variables. Values: \verb+'Faes_Method'+ (\cite{faes2013}, see section \ref{sec:TEsurrogatestats}) \\
+\verb+shifttest+ & 'yes' & string & Perform shift test to identify instantaneous mixing between the signal pairs. Values: 'yes' or 'no'. Note: If \verb+cfg.extracond = 'Faes_Method'+ is requested, \texttt{cfg.shifttest} has to be set to 'no' as both methods are mutually exclusive (see section \ref{sec:TEsurrogatestats}).\\
+\rowcolor{Gray}
+\verb+shifttesttype+ & 'TE>TEshift' & string & The shift test can be calculated for the direction TE value of original data > TE values of shifted data (value = 'TE>TEshift') or for the other direction (value = 'TEshift>TE'). In this case the alpha is set to 0.1.\\
+\verb+shifttype+ & 'predicttime'& string & Shifting the data 'onesample' or the length of the 
+'predicttime'. \\
+\rowcolor{Gray}
+\verb+numpermutation+ & 190100/500$^a$ & integer & Nr of permutations in permutation test.\\
+\verb+permstatstype+  & 'indepsamplesT' & string & Type of the test statistic used: 'mean' to use the distribution of the mean differences, 'normmean' to use the distribution of the normalized mean differences and 'depsamplesT' or 'indepsamplesT' for distribution of the t-values.\\
+\rowcolor{Gray}
+\verb+tail+ & 1 & integer & 1 tail or 2 tailed test of significance (for the permutation tests).\\
+\verb+correctm+ & 'FDR' & string & Correction method used for correction of the multiple comparison problem over all analyzed channel combinations - False discovery rate 'FDR' or Bonferroni correction 'BONF'.\\
+\rowcolor{Gray}
+\verb+fileidout+ & & string & String for the first part of the output filename.\\
+\multicolumn{4}{l}{}\\
+\multicolumn{4}{l}{\textbf{Additional hardware parameters needed when using the ensemble method for TE estimation}}\\ \midrule
+\verb+GPUmemsize+ & & integer & The memory of the GPU in MB (e.g. \verb+cfg.GPUmemsize = 4200;+). \\
+\rowcolor{Gray}
+\verb+numthreads+ & & integer & Max. number of threads that can be run in one block on the GPU. \\
+\verb+maxgriddim+ & & integer & Max. grid dimension of the GPU. \\
+\bottomrule
+\multicolumn{4}{p{\textwidth}}{$^a$ The first value is the default for trial-wise TE estimation on the CPU, the second value is the default for ensemble TE estimation using a GPU.}
+\end{tabularx}} \label{tab:cfgTESS}
+\end{table}

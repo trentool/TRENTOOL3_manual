@@ -1,0 +1,183 @@
+\begin{lstlisting}
+function runTEgroupTRENTOOL3
+
+%% set paths
+
+TRENTOOLpath = '/data/home1/pwollsta/TRENTOOL3_group';
+addpath(TRENTOOLpath); 
+addpath('/data/common/FieldtripCurrent/fieldtrip-20120703');
+ft_defaults;
+fprintf('#####################################################\n');
+fprintf('##                 Path set:                       ##\n');
+fprintf('##   %s          ##\n',TRENTOOLpath);
+fprintf('#####################################################\n');
+
+
+%% get data
+
+inputpath = '/data/projects/TransferEntropy/MooneyVC/VCDiffnodes/';
+cd(inputpath);
+
+dir('*Up_VirCh_RawData_10to140Hz.mat')
+files = dir('*Up_VirCh_RawData_10to140Hz.mat');
+
+% find relevant data sets specified by ind
+files = files(1:4);
+fileCell = cell(1,4);
+
+fprintf('Processing the following %.0f subjects:\n', length(files));
+for i=1:length(files)
+    fprintf('\t%s\n', files(i).name(1:5));
+    fileCell{i} = files(i).name;
+end;
+
+% contains channel info
+load('/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/Mooney_testdata/file_prepare.mat');
+load(files(1).name);
+load('/data/home1/pwollsta/CUDA/mooney_analysis/BBA06/win1/BBA06_RAG4_TGA_u_13_time0-0.15s_TEpermtest_output.mat')
+channelcombi = TEpermtest.TEprepare.channelcombilabel;
+clear TEpermtest;
+
+outputpath = '/data/home1/pwollsta/groupanalysis/testrun_04/';
+
+%% create cfg (as you would for single subject analysis)
+
+cfgTEGP                  = [];
+cfgTEGP.Path2TSTOOL      = '/data/home1/pwollsta/CUDA/OpenTSTOOL';
+cfgTEGP.TEcalctype       = 'VW_ds'; 
+
+%cfgTEP.channel             = fdat.channel_labels;
+cfgTEGP.sgncmb = channelcombi(1:2,:);
+cfgTEGP.predicttimemin_u    = 5;
+cfgTEGP.predicttimemax_u    = 9;
+cfgTEGP.predicttimestepsize = 2;
+%cfgTEP.predicttime_u = 5;
+
+
+% define analysis windows toi_vec = [-0.07:0.1:0.83 ; 0.1:0.1:1];  % windowlength 170 ms
+%toi_vec = cat(2,[0:0.15:0.3  ; 0.15:0.15:0.45 ],[0.075:0.15:0.375 ; 0.225:0.15:0.525]);
+%cfgTEP.toi  = [toi_vec(1,1) toi_vec(2,1)];
+cfgTEGP.toi  = [0 600];
+
+% ACT estimation and constraints on allowed ACT(autocorelation time)
+cfgTEGP.maxlag      = 3*cfgTEGP.predicttimemax_u;   % orig: 1000/90
+cfgTEGP.actthrvalue = 40;                           % treshold for ACT (orig: 150/100), kann auf 40/45/50 gesetzt werden
+cfgTEGP.minnrtrials = 12;                           % minimum acceptable number of trials
+
+% optimizing embedding
+cfgTEGP.optimizemethod ='ragwitz';   % criterion used
+cfgTEGP.ragdim         = 4:8;        % criterion dimension
+cfgTEGP.ragtaurange    = [0.2 0.4];  % range for tau [0.5 1]
+cfgTEGP.ragtausteps    = 15;         % steps for ragwitz tau steps
+cfgTEGP.repPred        = 20;         % original: 100, kann auf 25-50 gesetzt werden
+
+% kernel-based TE estimation
+cfgTEGP.flagNei = 'Mass' ;           % neigbour analyse type
+cfgTEGP.sizeNei = 4;                 % neigbours to analyse
+
+cfgTEGP.ensemblemethod  = 'no';
+cfgTEGP.outputpath  = outputpath;
+
+save([outputpath 'fileCell_prepared.mat'],'fileCell');
+
+%% run TEgroup_prepare
+
+% Prepares all subjects (over groups) for group analysis by finding a 
+% globally optimal (i.e. optimal over *all* subjects)
+% The functions needs to be called from the folder containing the raw data
+% files. Inputs are a cfg structure (the same as for single subject
+% TEprepare) and a cell with individual file names (not paths!). 
+% The function loops over all subjects and u's. The group optimized
+% parameters are then added to the data files as a field '.groupprepare'. 
+% InteractionDelayReconstruction_calculate will recognize data prepared for
+% group analysis by this field and will use the group optimized parameters 
+% for TE estimation. Subjects are separated into groups by the statistics
+% function only.
+% Options for 
+TEgroup_prepare(cfgTEGP,fileCell);
+
+%datadataprepAll = TEgroup_prepare(cfgTEGP,fileCell);
+%save([outputpath 'datapreparedAll.mat'],'datadataprepAll');
+
+%% run analysis on group prepared data
+
+% from here on, group analysis is the same as single subject analysis:
+% InteractionDelayReconstruction_calculate recognizes group prepared data.
+% It takes the cfg for TEprepare (cfgTEGP, might be reused from 
+% TEgroup_prepare) and TEsurrogatestats (cfgTESS, as for single subject 
+% analysis) as input as well as the data structure (not the file name, you
+% have to load the data yourself).
+
+addpath('/data/home1/pwollsta/CUDA/mooney_analysis_group/TRENTOOL3_group_TITAN')
+addpath('/data/common/FieldtripCurrent/fieldtrip-20120703');
+ft_defaults;
+
+cfgTESS               = [];
+cfgTESS.shifttest     = 'yes';
+cfgTESS.optdimusage   = 'indivdim';   % dimension to use
+cfgTESS.surrogatetype = 'trialshuffling';
+
+cd(cfgTEGP.outputpath)
+
+fileCell = dir('*denoised_10*');
+
+for i=1:length(fileCell)
+        
+    load(fileCell(i).name)
+    cfgTESS.fileidout = strcat(cfgTEGP.outputpath,fileCell(i).name(1:5));
+    
+    TGAresults = InteractionDelayReconstruction_calculate(cfgTEGP,cfgTESS,VChannelDataOut);
+    
+    save([cfgTEGP.outputpath fileCell(i).name(1:end-4) '_calc.mat'],'TGAresults');
+    clear TGAresults VChannelDataOut;
+    
+end
+
+files = dir('*_calc.mat');
+
+% settings for interaction delay analysis
+cfgTGAA.select_opt_u     = 'max_TEdiff';
+cfgTGAA.select_opt_u_pos = 'shortest';
+% settings for graph analysis
+cfgGA.threshold = 1;
+cfgGA.cmc       = 0;
+
+for i=1:length(files)
+    load(files(i).name);
+    TGAresults_analyzed    = InteractionDelayReconstruction_analyze(cfgTGAA,TGAresults);
+    %TGAresults_analyzed_GA = TEgraphanalysis(cfgGA,TGAresults_analyzed);
+    save([cfgTEGP.outputpath files(i).name(1:end-9) '_results.mat'],'TGAresults_analyzed');
+end
+
+
+%% run group stats (this doesn't work yet ;) )
+   
+
+cd(cfgTEGP.outputpath);
+fileCell_TEpermtest = dir('*_results.mat');
+fileCell_TEpermtest = {fileCell_TEpermtest(:).name};
+%fileCell_TEresult = dir('*_TE_output.mat');
+%fileCell_TEresult = {fileCell_TEresult(:).name};
+
+
+cfgGSTAT = [];
+cfgGSTAT.design    = [1 2 3 4; 1 1 2 2];
+cfgGSTAT.uvar      = 1;
+cfgGSTAT.ivar      = 2;
+cfgGSTAT.fileidout = 'test_groupstats';
+TEgroup_stats(cfgGSTAT,fileCell_TEpermtest)
+
+%   cfg.design      = matrix containing a row with subject number and a row
+%                     with independent variable representing the order of
+%                     the data input.
+%                       example:
+%                       datasets:    1 2 3 4 5 1 2 3 4 5
+%                       conditions:  1 1 1 1 1 2 2 2 2 2
+%   cfg.uval        = row in cfg.design which contains the dataset number
+%                     (in the example: 1)
+%   cfg.ival        = row in cfg.design which contains the independent
+%                     variable (in the example: 2)
+%   cfg.alpha       = significance level for statistical shift test,
+%                     permutation test and correction for multiple
+
+\end{lstlisting}

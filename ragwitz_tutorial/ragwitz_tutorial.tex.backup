@@ -1,0 +1,158 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[USenglish,ngerman,english]{babel} %francais, polish, spanish, ...
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{lmodern} %Type1-font for non-english texts and characters
+\usepackage[parfill]{parskip}
+
+%% Watermark     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{draftwatermark}		 % watermark on every page
+\usepackage[firstpage]{draftwatermark}  % watermark only on first page
+%\usepackage[nostamp]{draftwatermark}	 % quickly removes watermark
+
+%% Math          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,amssymb}
+
+%% Tables 	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % column with 
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+%\usepackage{ctable}
+
+%% Layout 	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,includeheadfoot]{geometry}
+\usepackage{geometry}
+\usepackage{xcolor,colortbl}
+\usepackage{graphicx}
+\usepackage[font=normalsize]{caption}
+\usepackage{color} % needed for background color in listings
+\definecolor{Gray}{gray}{0.85}
+\usepackage[ 
+    colorlinks,        % Links ohne Umrandungen in zu wählender Farbe 
+    linkcolor=black,   % Farbe interner Verweise 
+    filecolor=black,   % Farbe externer Verweise 
+    citecolor=black,   % Farbe von Zitaten 
+    urlcolor =black    % Farbe von Links
+]{hyperref}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{apacite}
+
+% cpations for figures and tables
+\captionsetup[table]{
+	format=plain,
+	labelformat=simple,
+	labelsep=newline,
+	justification=raggedright,
+	singlelinecheck=false,
+	labelfont={bf},
+	textfont={sl,small},
+	aboveskip= 5pt,
+	belowskip= 5pt} 
+\captionsetup[figure]{
+	format=hang,
+	labelformat=simple,
+	labelsep=colon,
+	justification=justified,
+	singlelinecheck=false,
+	labelfont={bf},
+	textfont={rm,small},
+	parskip=5pt,
+	aboveskip= 10pt,
+	belowskip= 10pt}
+	
+% appearance of the watermark
+%\SetWatermarkAngle{} % Angle at which the watermark text is drawn
+%\SetWatermarkColor[rgb]{0,1,0} % can also be used as {colorname}
+\SetWatermarkLightness{0.9} % Lightness of the watermark text (1=white, 0=black), this just sets a value for the grey
+\SetWatermarkFontSize{4cm} % Font size of the watermark text
+%\SetWatermarkScale{} % Scaling of the watermark text
+\SetWatermarkText{beta version} % Watermark text
+	
+
+%% Line Spacing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+\singlespacing        %% 1-spacing (default)
+%\onehalfspacing       %% 1,5-spacing
+%\doublespacing        %% 2-spacing
+
+%% Listings     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\usepackage{listing}
+\input{lstset_matlab}
+
+\newcommand{\origttfamily}{}
+\let\origttfamily=\ttfamily %Voheriges \ttfamily sichern
+\renewcommand{\ttfamily}{\origttfamily \hyphenchar\font=`\_}
+
+
+\begin{document}
+%opening
+\title{TRENTOOL 3.1 -- Using the Ragwitz Criterion in TRENTOOL}
+%\author{Patricia Wollstadt}
+\author{Patricia Wollstadt\thanks{\texttt{p.wollstadt@stud.uni-frankfurt.de}} \and Michael Lindner \and Raul Vicente \and Michael Wibral \and Nicu Pampu \and Mario Martinez-Zarzuela}
+\date{Version 1.00\\ 
+\texttt{http://www.trentool.de/}}
+
+\maketitle
+
+\newpage
+
+\paragraph*{What is TRENTOOL?} TRENTOOL (\underline{TR}ansfer \underline{EN}tropy \underline{TOOL}box) is an open-source MATLAB toolbox that allows the user to easily handle the considerable complexity of transfer entropy (TE) estimation from time series. For the use with neural data TRENTOOL seamlessly integrates with the popular FieldTrip toolbox \cite{oostenveld2011}. 
+
+\paragraph*{State Space Reconstruction} TE estimation requires the reconstruction of the state space from a scalar time series. A state is defined as the collection of random variables that uniquely describe the state of a process. The set of all possible realizations of such state variables is called the state space of the process. State spaces can be (appropriatively) reconstructed using a time-delayed embedding \cite{taken1981}, such that reconstructed states take the form 
+
+\[
+    \mathbf{x}_t^{d_x} = \left(x_t, x_{t-1}, \ldots, x_{t-(d-1)\tau} \right),
+\]
+
+where $d$ is called the embedding dimension and $\tau$ the embedding delay. To find optimal values for $d$ and $\tau$, TRENTOOL tests how well user provided pairs of candidate values for $d$ and $\tau$ optimize a local predictor \cite{ragwitz2002}. This is done in the function \texttt{TEprepare.m}
+
+\paragraph*{The Ragwitz Criterion} We call the dimension $d$ and embedding delay $\tau$ the embedding parameters. Embedding parameters are found by optimizing a local predictor proposed in \cite{ragwitz2002}. The Ragwitz criterion uses candidate values for $d$ and $\tau$ and tests how well these candidate values embed the time series (Fig. \ref{fig:embedding}), such that for each time point the next point in time can be predicted with minimum error (Fig. \ref{fig:ragwitz}).
+
+
+\begin{figure}[H]	
+	\centering 
+ 		\includegraphics{ragwitz_01.pdf}
+	\caption[Time-delayed embedding]{\textbf{Time-delayed embedding.} Example for the dime-delayed embedding of a point at time $t$ using embedding parameters $d=3$ and $\tau=2$. Scalar time points at times $t$, $t-2$, and $t-4$ (A) are combined into an time-delayed embedded vector (B).}
+	\label{fig:embedding}
+\end{figure} 
+
+The Ragwitz criterion proceedes as follows (Fig. \ref{fig:ragwitz}):
+
+For all pairs of candidate values $d$ and $\tau$ do the following:
+\begin{enumerate}
+ \item Embed the time series using $d$ and $\tau$
+ \item Do the following for each embedded point $\mathbf{y_t^{d_y}}$:
+ \begin{enumerate}
+  \item conduct a nearest neighbour search
+  \item predict the next point $\mathbf{\hat{y}_{t+1}^{d_y}}$ as the average of the nearest neighbours
+  \item calculate the local error $e_t = \mathbf{\hat{y}_{t+1}^{d_y}} - \mathbf{y_{t+1}^{d_y}}$
+ \end{enumerate}
+ \item Sum the local errors over all embedded points
+\end{enumerate}
+
+As output, the Ragwitz criterion will return the pair of values $d$ and $\tau$, that minimize the error over all embedded time points. 
+
+
+\begin{figure}[H]	
+	\centering 
+ 		\includegraphics{ragwitz_02.pdf}
+	\caption[Ragwitz Criterion]{\textbf{Ragwitz Criterion.} (A) Each point in the time series is embedded using the current values for $d$ and $\tau$. (B) A nearest neighbour search is performed for each point. (C) For each point, the next point in time is predicted as the average of the reference point's nearest neighbours. The prediction error is computed as the distance of the predicted and the actual next point.}
+	\label{fig:ragwitz}
+\end{figure} 
+
+
+\paragraph*{Using the Ragwitz Criterion in TRENTOOL} TRENTOOL requires the user to provide candidate values for $d$ and $\tau$ to use the Ragwitz Criterion for parameter optimization. 
+
+
+\input{tab_cfgTEP}
+
+
+\newpage
+\bibliographystyle{apacite}
+\bibliography{../DocumentationBib}
+
+\end{document}

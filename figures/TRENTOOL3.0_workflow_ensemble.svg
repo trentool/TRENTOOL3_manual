@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg12270"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="TRENTOOL2.0_workflow_ensemble.svg">
+  <defs
+     id="defs12272">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path12817"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path12820"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12817-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12817-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-54"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12817-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12820-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12820-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-78"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12820-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12817-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-21"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12817-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-78-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12820-2-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12820-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16947"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16949"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16951"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16953"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16955"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16957"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16959"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16961"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16963"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16965"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16967"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16969"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16971"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16973"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16975"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16977"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker16979"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16981"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-69"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12820-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-51"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12817-76"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="-848.05577"
+     inkscape:cy="461.86857"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1150"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid17589" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata12275">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="43"
+       y="210.36218"
+       id="text15210"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="43"
+         y="210.36218"
+         id="tspan15214" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="32.405273"
+       y="43.125854"
+       id="text15210-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="32.405273"
+         y="43.125854"
+         id="tspan15214-7" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot16842"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:DejaVu Sans;font-style:normal;font-weight:bold;font-size:12px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:DejaVu Sans Bold;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+         id="flowRegion16844"><rect
+           id="rect16846"
+           width="701.44995"
+           height="452.54834"
+           x="746.70477"
+           y="206.66248" /></flowRegion><flowPara
+         id="flowPara16848" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot16850"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:DejaVu Sans;font-style:normal;font-weight:bold;font-size:12px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:DejaVu Sans Bold;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+         id="flowRegion16852"><rect
+           id="rect16854"
+           width="794.78802"
+           height="466.69046"
+           x="691.55042"
+           y="216.56197" /></flowRegion><flowPara
+         id="flowPara16856" /></flowRoot>    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-3"
+       width="310"
+       height="59"
+       x="-1217.7537"
+       y="57.312256"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1212.7537"
+       y="71.312256"
+       id="text12299-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan12301-9"
+         x="-1212.7537"
+         y="71.312256">TEprepare.m</tspan><tspan
+         sodipodi:role="line"
+         x="-1212.7537"
+         y="86.312256"
+         id="tspan16834-6"> - check data/parameters</tspan><tspan
+         sodipodi:role="line"
+         x="-1212.7537"
+         y="101.31226"
+         id="tspan16832-5"> - get embedding parameters</tspan><tspan
+         sodipodi:role="line"
+         x="-1212.7537"
+         y="116.31226"
+         id="tspan16830-5" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.80517393px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m -1192.7537,119.81226 0,76.49999"
+       id="path12303-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-9-0-2"
+       width="295.51093"
+       height="60.583717"
+       x="-1137.705"
+       y="706.87482"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-5"
+       width="704.61731"
+       height="982.91052"
+       x="-1222.5624"
+       y="201.0036"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-9-0"
+       width="589.66736"
+       height="87.583717"
+       x="-1179.6674"
+       y="229.33865"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1217.7537"
+       y="216.81226"
+       id="text12299-5-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="-1217.7537"
+         y="216.81226"
+         id="tspan16840-6">TEsurrogatestats_ensemble.m</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
+       d="m -1145.7591,335.31985 0,793.56975 -32.9877,0 0,-806.57049 32.9877,0 0,17.5124"
+       id="path13281-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-606.47217"
+       y="-1200.7224"
+       id="text14197-0"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan14199-7"
+         x="-606.47217"
+         y="-1200.7224"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">loop over</tspan><tspan
+         sodipodi:role="line"
+         x="-606.47217"
+         y="-1185.7224"
+         id="tspan14201-6"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">channelpairs</tspan></text>
+    <rect
+       style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect14433-6"
+       width="196.12616"
+       height="51.779701"
+       x="-1183.7537"
+       y="123.31226"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+       x="-1179.4313"
+       y="135.73317"
+       id="text14435-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan14437-9"
+         x="-1179.4313"
+         y="135.73317">cfg.TEprepare.dim</tspan><tspan
+         sodipodi:role="line"
+         x="-1179.4313"
+         y="150.73317"
+         id="tspan14439-8">cfg.TEprepare.tau</tspan><tspan
+         sodipodi:role="line"
+         x="-1179.4313"
+         y="165.73317"
+         id="tspan15202-4">cfg.ensemblemethod = 'yes'</tspan></text>
+    <g
+       id="g15204-0"
+       transform="translate(-1176.2537,601.79993)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="607.36218"
+         x="92.265633"
+         height="58"
+         width="181.46873"
+         id="rect14433-23-9"
+         style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text14435-5-6-9-0"
+         y="629.78015"
+         x="120.26855"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+         xml:space="preserve"><tspan
+           id="tspan14485-3-7-3"
+           y="629.78015"
+           x="120.26855"
+           sodipodi:role="line">TEpermtest</tspan><tspan
+           id="tspan15191-7"
+           y="644.78015"
+           x="120.26855"
+           sodipodi:role="line">TEresult</tspan></text>
+    </g>
+    <g
+       id="g17514"
+       transform="translate(165.46299,-9.1923882)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="261.11166"
+         x="-1149.6383"
+         height="51.514469"
+         width="348.37454"
+         id="rect14433-2-3-8"
+         style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.51086533;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text14435-5-5-57"
+         y="274.17087"
+         x="-1144.6367"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+         xml:space="preserve"><tspan
+           y="274.17087"
+           x="-1144.6367"
+           id="tspan15432-1"
+           sodipodi:role="line">'data4embedding' {channelcombi x 2} </tspan><tspan
+           y="289.17087"
+           x="-1144.6367"
+           id="tspan15434-3"
+           sodipodi:role="line">  with matrices [trial x time] for each channel</tspan><tspan
+           y="304.17087"
+           x="-1144.6367"
+           id="tspan15438-8"
+           sodipodi:role="line">'cfg'</tspan><tspan
+           y="319.17087"
+           x="-1144.6367"
+           id="tspan15436-7"
+           sodipodi:role="line" /></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m -595.21289,403.83941 47.329,0 0,232.72351 -40.10889,0"
+       id="path15682-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-9"
+       width="566.91748"
+       height="98.190323"
+       x="-1156.9175"
+       y="355.73309"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
+       d="m -1096.4661,392.26905 0,51.96962 -18.2029,0 0,-78.82083 18.2029,0 0,12.43035"
+       id="path13281-4-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-405.30872"
+       y="-1139.2914"
+       id="text14197-5-4"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="-405.30872"
+         y="-1139.2914"
+         id="tspan14201-7-4"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">loop over</tspan><tspan
+         sodipodi:role="line"
+         x="-405.30872"
+         y="-1124.2914"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         id="tspan15508-9">trials</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-7-5"
+       width="294.57706"
+       height="41.919029"
+       x="-1077.683"
+       y="368.01208"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1071.0314"
+       y="383.08917"
+       id="text12299-5-0-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan12301-0-4-8"
+         x="-1071.0314"
+         y="383.08917">TEembedding.m</tspan></text>
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-9-0-2-6-9-3-3"
+       width="254.01093"
+       height="15.917717"
+       x="-1057.5055"
+       y="389.22916"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1053.7847"
+       y="400.45169"
+       id="text15531-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15533-7"
+         x="-1053.7847"
+         y="400.45169">- embed original data per trial</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -615.37841,520.65984 67.17514,0"
+       id="path15684-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-0-5"
+       width="566.21045"
+       height="138.19803"
+       x="-1156.2104"
+       y="463.43298"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.93169332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
+       d="m -1095.7372,517.97147 0,71.64532 -18.2589,0 0,-108.66241 18.2589,0 0,17.13648"
+       id="path13281-4-8-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-567.71136"
+       y="-1138.5842"
+       id="text14197-5-3-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15583-0"
+         x="-567.71136"
+         y="-1138.5842">loop over</tspan><tspan
+         sodipodi:role="line"
+         id="tspan15585-6"
+         x="-567.71136"
+         y="-1123.5842">numperm</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
+       d="m -1020.5818,537.9081 0,43.66157 -18.2029,0 0,-66.22026 18.2029,0 0,10.44319"
+       id="path13281-4-3-61"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-552.96014"
+       y="-1063.407"
+       id="text14197-5-6-40"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="-552.96014"
+         y="-1063.407"
+         id="tspan14201-7-5-9"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">loop over</tspan><tspan
+         sodipodi:role="line"
+         x="-552.96014"
+         y="-1048.407"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         id="tspan15508-0-0">trials</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1072.1693"
+       y="492.37558"
+       id="text15656-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15658-0"
+         x="-1072.1693"
+         y="492.37558">- create surrogate data by permutation of target time series</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3.63038874;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-7-3-1-5"
+       width="325.40353"
+       height="177.64474"
+       x="-1155.046"
+       y="688.01868"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1145.355"
+       y="703.42255"
+       id="text15678-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15680-9"
+         x="-1145.355"
+         y="703.42255">TEcallGPUsearch.m</tspan></text>
+    <g
+       id="g17746"
+       transform="translate(0,-2.8284271)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="711.60022"
+         x="-1137.705"
+         height="66.341072"
+         width="295.51093"
+         id="rect12297-4-7-9-0-2-6-3"
+         style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text16102-3"
+         y="725.53442"
+         x="-1129.7537"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         xml:space="preserve"><tspan
+           y="725.53442"
+           x="-1129.7537"
+           id="tspan16104-0"
+           sodipodi:role="line">- calculate memory on GPU and no. runs</tspan><tspan
+           y="740.53442"
+           x="-1129.7537"
+           sodipodi:role="line"
+           id="tspan18057">  needed to do all neighbour counts</tspan><tspan
+           y="755.53442"
+           x="-1129.7537"
+           sodipodi:role="line"
+           id="tspan18063">- get a sufficient no. chunks per run, such </tspan><tspan
+           y="770.53442"
+           x="-1129.7537"
+           sodipodi:role="line"
+           id="tspan4307">  that full GPU capacity is used</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.81763375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m -1058.7277,963.2466 0,87.5768"
+       id="path14961-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-9-0-2-6-3-7"
+       width="295.51093"
+       height="35.341072"
+       x="-1137.705"
+       y="937.19165"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.81408376px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m -927.76366,964.00727 0,86.81793"
+       id="path14961-9-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-7-3-1-2-3"
+       width="325.53394"
+       height="62.757915"
+       x="-1156.0206"
+       y="914.12671"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-9-0-2-6-9"
+       width="295.51093"
+       height="34.167717"
+       x="-1136.1693"
+       y="935.75305"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1146.2644"
+       y="929.59576"
+       id="text15678-1-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15680-7-2"
+         x="-1146.2644"
+         y="929.59576">TEcalc.m</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1133.1631"
+       y="948.83582"
+       id="text16102-2-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan16104-2-1"
+         x="-1133.1631"
+         y="948.83582">- split up neighbour counts by chunks</tspan><tspan
+         sodipodi:role="line"
+         x="-1133.1631"
+         y="963.83582"
+         id="tspan16108-8-0">- calculate TE and MI for individual chunks</tspan></text>
+    <g
+       id="g17822"
+       transform="translate(18.5,-30.914915)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1018.8209"
+         x="-1212.4669"
+         height="48.788059"
+         width="123.86611"
+         id="rect14433-2-2-9-7"
+         style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.53688669;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text14435-5-6-8-33"
+         y="1030.7609"
+         x="-1207.501"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+         xml:space="preserve"><tspan
+           id="tspan14439-6-1-2-9"
+           y="1030.7609"
+           x="-1207.501"
+           sodipodi:role="line">TE values</tspan><tspan
+           id="tspan14485-3-4-3"
+           y="1045.7609"
+           x="-1207.501"
+           sodipodi:role="line"> [#nchunks]</tspan><tspan
+           id="tspan15200-5-5"
+           y="1060.7609"
+           x="-1207.501"
+           sodipodi:role="line"> [1] = orig data</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m -1071.4623,836.97313 0,72.81014"
+       id="path14961-3-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect14433-2-2-9-1-5"
+       width="257.25983"
+       height="49.980858"
+       x="-1060.8521"
+       y="862.76953"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+       x="-1056.1802"
+       y="876.05682"
+       id="text14435-5-6-8-3-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="-1056.1802"
+         y="876.05682"
+         id="tspan14439-6-1-2-6-9">ncount</tspan><tspan
+         sodipodi:role="line"
+         x="-1056.1802"
+         y="891.05682"
+         id="tspan15200-5-6-7"> structure with 6 neighbour counts,</tspan><tspan
+         id="tspan18065"
+         sodipodi:role="line"
+         x="-1056.1802"
+         y="906.05682"> concatenated over chunks</tspan></text>
+    <g
+       id="g17815"
+       transform="translate(15.5,-32)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1019.906"
+         x="-931.69812"
+         height="48.788063"
+         width="123.86565"
+         id="rect14433-2-2-9-0-3"
+         style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.53688383;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text14435-5-6-8-6-2"
+         y="1031.8459"
+         x="-926.98212"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+         xml:space="preserve"><tspan
+           id="tspan14439-6-1-2-2-8"
+           y="1031.8459"
+           x="-926.98212"
+           sodipodi:role="line">MI values</tspan><tspan
+           id="tspan14485-3-4-4-9"
+           y="1046.8459"
+           x="-926.98212"
+           sodipodi:role="line"> [#nchunks]</tspan><tspan
+           id="tspan15200-5-2-5"
+           y="1061.8459"
+           x="-926.98212"
+           sodipodi:role="line"> [1] = orig data</tspan></text>
+    </g>
+    <g
+       id="g17921"
+       transform="translate(2.7238922,0)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         transform="translate(-6.5,-39.138306)"
+         id="g17903">
+        <rect
+           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect12297-4-7-7-3-1-2-8-7-3-7"
+           width="206.8082"
+           height="62.757915"
+           x="-984.40405"
+           y="1093.9833" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           x="-978.31403"
+           y="1109.9353"
+           id="text15678-1-7-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan15680-7-4-7"
+             x="-978.31403"
+             y="1109.9353">TEpvalue.m</tspan></text>
+        <rect
+           style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect12297-4-7-0-9-5-3-8"
+           width="183.74811"
+           height="35.875702"
+           x="-968.37408"
+           y="1115.4243" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           x="-964.21277"
+           y="1128.9882"
+           id="text16102-2-5-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan16104-2-3-6"
+             x="-964.21277"
+             y="1128.9882">- count TE_sur &lt; TE_emp</tspan><tspan
+             sodipodi:role="line"
+             x="-964.21277"
+             y="1143.9882"
+             id="tspan16108-8-7-1">- calculate p-value</tspan></text>
+      </g>
+      <g
+         transform="translate(-0.5,-41)"
+         id="g17912">
+        <rect
+           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect12297-4-7-7-3-1-2-8-7-3"
+           width="206.8082"
+           height="62.757915"
+           x="-1207.3593"
+           y="1095.845" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           x="-1201.1029"
+           y="1109.9353"
+           id="text15678-1-7-3-5"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan15680-7-4-5-0"
+             x="-1201.1029"
+             y="1109.9353">TEpvalue.m</tspan></text>
+        <rect
+           style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect12297-4-7-0-9-5-3"
+           width="183.74811"
+           height="35.875702"
+           x="-1191.874"
+           y="1115.4243" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           x="-1187.5017"
+           y="1128.9882"
+           id="text16102-2-5-9-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan16104-2-3-2-5"
+             x="-1187.5017"
+             y="1128.9882">- count MI_sur &lt; MI_emp</tspan><tspan
+             sodipodi:role="line"
+             x="-1187.5017"
+             y="1143.9882"
+             id="tspan16108-8-7-9-9">- calculate p-value</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.65661347px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1111.2537,1108.5144 0,32.3356 236.00007,0 0,-32.3356"
+       id="path16400-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-78)"
+       d="m -993.25366,1153.2301 0,52"
+       id="path16402-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g16924-4"
+       transform="translate(-1264.2537,29.307939)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1100.5194"
+         x="204.62595"
+         height="48.875702"
+         width="132.74811"
+         id="rect12297-4-7-0-9-5"
+         style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text16618-5"
+         y="1112.9221"
+         x="210.73654"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         xml:space="preserve"><tspan
+           y="1112.9221"
+           x="210.73654"
+           id="tspan16620-2"
+           sodipodi:role="line">- create output</tspan><tspan
+           id="tspan16622-6"
+           y="1127.9221"
+           x="210.73654"
+           sodipodi:role="line">  structures</tspan><tspan
+           id="tspan16702-1"
+           y="1142.9221"
+           x="210.73654"
+           sodipodi:role="line">- save output</tspan></text>
+    </g>
+    <g
+       id="g17731"
+       transform="translate(0,7.7781746)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="775.37183"
+         x="-1137.705"
+         height="70.583717"
+         width="295.51093"
+         id="rect12297-4-7-9-0-2-6"
+         style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <g
+         transform="translate(-9.2910156,44.801515)"
+         id="g17627">
+        <rect
+           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:1.20000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect12297-4-7-7-3-9-5"
+           width="198.06517"
+           height="27.833061"
+           x="-1050.5743"
+           y="734.388" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           x="-1040.1687"
+           y="751.44806"
+           id="text12299-5-0-5-1-5"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan12301-0-4-0-1-0"
+             x="-1040.1687"
+             y="751.44806">fnearneigh_gpu.mex</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path13281-4-3-6-2"
+         d="m -1075.916,801.78163 0,36.75372 -18.2029,0 0,-55.74332 18.2029,0 0,8.79094"
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none" />
+      <text
+         transform="matrix(0,-1,1,0,0,0)"
+         sodipodi:linespacing="125%"
+         id="text14197-5-6-4-1"
+         y="-1118.7412"
+         x="-811.14417"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           id="tspan14201-7-5-3-4"
+           y="-1118.7412"
+           x="-811.14417"
+           sodipodi:role="line">loop over</tspan><tspan
+           id="tspan15508-0-4-3"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           y="-1103.7412"
+           x="-811.14417"
+           sodipodi:role="line">runs</tspan></text>
+      <g
+         transform="translate(-9,42.301515)"
+         id="g17632">
+        <rect
+           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:1.20000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect12297-4-7-7-3-9-1-0"
+           width="198.06517"
+           height="27.833061"
+           x="-1050.8654"
+           y="771.77985" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           x="-1040.948"
+           y="788.8399"
+           id="text12299-5-0-5-1-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan12301-0-4-0-1-9-2"
+             x="-1040.948"
+             y="788.8399">range_search_all_gpu.mex</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g16750-4"
+       transform="translate(-1053.7846,23.376481)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="338.2572"
+         x="164.55902"
+         height="24.603001"
+         width="222.42523"
+         id="rect14433-2-3-2-9"
+         style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.83430338;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text14435-5-5-5-9"
+         y="352.35635"
+         x="172.01477"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+         xml:space="preserve"><tspan
+           y="352.35635"
+           x="172.01477"
+           id="tspan15436-2-0"
+           sodipodi:role="line">ts_1,ts_2,dim,tau,u,extracond</tspan></text>
+    </g>
+    <g
+       id="g16902-7"
+       transform="translate(-1269.4521,-22.689536)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="4.4299331"
+         x="442.64886"
+         height="197.04788"
+         width="371.93817"
+         id="rect16858-8"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.91893846;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text16782-7"
+         y="24.499269"
+         x="457.28552"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         xml:space="preserve"><tspan
+           y="24.499269"
+           x="457.28552"
+           id="tspan16784-4"
+           sodipodi:role="line">UPDATES IN</tspan><tspan
+           id="tspan16786-9"
+           y="39.499268"
+           x="457.28552"
+           sodipodi:role="line"> - TEprepare.m</tspan><tspan
+           id="tspan16788-3"
+           y="54.499268"
+           x="457.28552"
+           sodipodi:role="line"> - InteractionDelayReconstruction_calculate.m</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text16790-4"
+         y="104.49928"
+         x="457.28552"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         xml:space="preserve"><tspan
+           y="104.49928"
+           x="457.28552"
+           id="tspan16792-4"
+           sodipodi:role="line">NEW FUNCTIONS</tspan><tspan
+           id="tspan16794-9"
+           y="119.49928"
+           x="457.28552"
+           sodipodi:role="line"> - TEsurrogatestats_ensemble.m</tspan><tspan
+           id="tspan16796-0"
+           y="134.49928"
+           x="457.28552"
+           sodipodi:role="line"> - TEembedding.m</tspan><tspan
+           id="tspan16798-8"
+           y="149.49928"
+           x="457.28552"
+           sodipodi:role="line"> - TEcallGPUsearch.m</tspan><tspan
+           id="tspan16800-5"
+           y="164.49928"
+           x="457.28552"
+           sodipodi:role="line"> - TEcalc.m</tspan><tspan
+           id="tspan16802-3"
+           y="179.49928"
+           x="457.28552"
+           sodipodi:role="line"> - TEpvalue.m</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1172.3831"
+       y="244.13914"
+       id="text17490"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan17492"
+         x="-1172.3831"
+         y="244.13914">- check data/parameters </tspan><tspan
+         sodipodi:role="line"
+         x="-1172.3831"
+         y="259.13916"
+         id="tspan17494">- read data for embedding</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1076.2166"
+       y="436.81604"
+       id="text17522"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan17524"
+         x="-1076.2166"
+         y="436.81604">- concatenate embedded trials</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#bcbcbc;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-7-5-7"
+       width="294.57706"
+       height="41.919029"
+       x="-1007.0671"
+       y="515.60559"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1000.4155"
+       y="530.68268"
+       id="text12299-5-0-7-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan12301-0-4-8-1"
+         x="-1000.4155"
+         y="530.68268">TEembedding.m</tspan></text>
+    <rect
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect12297-4-7-9-0-2-6-9-3"
+       width="254.01093"
+       height="15.917717"
+       x="-989.25549"
+       y="536.82263"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-983.16876"
+       y="548.04517"
+       id="text15531-8-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15533-7-6"
+         x="-983.16876"
+         y="548.04517">- embed surrogate data per trial</tspan></text>
+    <g
+       id="g16750-4-8"
+       transform="translate(-983.16865,170.97)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="338.2572"
+         x="164.55902"
+         height="24.603001"
+         width="222.42523"
+         id="rect14433-2-3-2-9-7"
+         style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.83430338;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text14435-5-5-5-9-3"
+         y="352.35635"
+         x="172.01477"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+         xml:space="preserve"><tspan
+           y="352.35635"
+           x="172.01477"
+           id="tspan15436-2-0-6"
+           sodipodi:role="line">ts_1,ts_2,dim,tau,u,extracond</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1006.0993"
+       y="578.38794"
+       id="text17522-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan17524-3"
+         x="-1006.0993"
+         y="578.38794">- concatenate embedded trials</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m -684.87185,645.3153 28.38698,0 0,92.39915 -166.13284,0"
+       id="path15682-4-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="616.2406"
+       x="-1156.2104"
+       height="41.875702"
+       width="566.21045"
+       id="rect17648"
+       style="color:#000000;fill:#99e0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       x="-1148.3518"
+       y="632.82202"
+       id="text15656-9-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15658-0-8"
+         x="-1148.3518"
+         y="632.82202">- stack original and rurrogate data in the 3rd dimension</tspan><tspan
+         sodipodi:role="line"
+         x="-1148.3518"
+         y="647.82202"
+         id="tspan3389">- remember indices to later cut up data ('chunks_ind')</tspan></text>
+    <rect
+       style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect14433-2-8-5"
+       width="254.5417"
+       height="83.499954"
+       x="-780.26227"
+       y="717.26965" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+       x="-774.63013"
+       y="730.56549"
+       id="text14435-5-8-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-774.63013"
+         y="730.56549"
+         id="tspan14439-6-16-3">embedded data</tspan><tspan
+         sodipodi:role="line"
+         x="-774.63013"
+         y="745.56549"
+         id="tspan14485-0-2">  [#points dim nchunks]</tspan><tspan
+         id="tspan15193-3-8"
+         sodipodi:role="line"
+         x="-774.63013"
+         y="760.56549">[1:chunksize,:] = orig data</tspan><tspan
+         sodipodi:role="line"
+         x="-774.63013"
+         y="775.56549"
+         id="tspan17671">[chunksize+1:end] = surrogate data</tspan><tspan
+         sodipodi:role="line"
+         x="-774.63013"
+         y="790.56549"
+         id="tspan4303">chunks_ind = vector no. chunk</tspan></text>
+    <g
+       id="g16750-4-8-0"
+       transform="translate(-1191.4749,359.56381)"
+       inkscape:export-filename="/data/home1/pwollsta/CUDA/TRENTOOL2_ensemble/g17673.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g3398"
+         transform="translate(19.091883,-25.455843)">
+        <rect
+           style="color:#000000;fill:#faff7d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.86118311;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect14433-2-3-2-9-7-2"
+           width="237.24759"
+           height="24.57612"
+           x="164.57246"
+           y="338.27063" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+           x="172.01477"
+           y="352.35635"
+           id="text14435-5-5-5-9-3-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan15436-2-0-6-6"
+             x="172.01477"
+             y="352.35635">cfg, channelcombi, pointsets...</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

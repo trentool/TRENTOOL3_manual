@@ -1,0 +1,39 @@
+\begin{table}[H]
+\small \centering
+\caption[Parameters \texttt{cfg2DPLOT}]{Parameters for the configuration structure \texttt{cfg2DPLOT} of the function \texttt{TEplot2D.m} (TRENTOOL Version 3.3).} 
+\begin{tabularx}{\textwidth}{p{2.5cm}p{1.5cm}L{3cm}X} \toprule
+\textbf{field name} & \textbf{default value} & \textbf{data type} &\textbf{description} \\ \midrule
+\rowcolor{Gray}
+\verb+statstype+ & & integer & Statistics used for plotting (determines which information transfer arrows are plotted), 1 = corrected; 2 = uncorrected; 3 = 1-pval; 4 = rawdistance.\\
+%\verb+alpha+ & 0.05 & float & p-value threshold for plotting raw information transfer values.\\
+\verb+arrowpos+ & 2 & integer & Position of arrowhead: 1 = end of the line; 2 = centre of the line.\\
+\rowcolor{Gray}
+\verb+arrowcolorpos+ & [1 0 0 ] & integer vector [1x3] & Arrow color in case of positive mean distances between raw TE value and surrogate distribution (MATLAB rgb color-code, values have to be between 0 and 1).\\
+\rowcolor{Gray}
+\verb+arrowcolorneg+ & [0 0 1] & integer vector [1x3] & Arrow color in case of positive mean distances between raw TE value and surrogate distribution (MATLAB rgb color-code, values have to be between 0 and 1).\\
+\verb+alinewidth+ & 2 & integer & Linewidth of arrows in case of significance. \\
+\rowcolor{Gray}
+\verb+electrodes+ & \texttt{'on'} & string & plotting of electrodes, 'on', 'off', 'labels', 'numbers', 'highlights'.\\
+\verb+hcolor+ & [0 0 1] & integer vector [1x3] & Color of head cartoon. \\
+\rowcolor{Gray}
+\verb+hlinewidth+ & 2 & integer & Linewidth of the head cartoon, nose and ears.\\
+\verb+emarker+ & 'o' & string (MATLAB marker symbol) & Marker symbol.\\
+\rowcolor{Gray}
+\verb+ecolor + & [0 0 0] & integer vector [1x3] & Marker color (MATLAB rgb color-code, values have to be between 0 and 1).\\ 
+\verb+emarkersize+ & 2 & integer & Marker size. \\
+\rowcolor{Gray}
+\verb+efontsize+ & 8 & integer (pt) & Font size of electrode labels/numbers (only if \texttt{cfg2DPLOT.electrodes = 'numbers'} or \texttt{'labels'}). \\
+\verb+efontcolor+ & [0 0 0] & integer vector [1x3] & Font color of electrode labels/numbers (only if \texttt{cfg2DPLOT.electrodes = 'numbers'} or \texttt{'labels'}, MATLAB rgb color-code, values have to be between 0 and 1). \\
+\rowcolor{Gray}
+\verb+hlmarker+ & 'o' & string (MATLAB marker symbol) & Highlight marker symbol. \\
+\verb+hlcolor+ & [1 0 0] & integer vector [1x3] & Highlight marker color (MATLAB rgb color-code, values have to be between 0 and 1).\\
+\rowcolor{Gray}
+\verb+hlmarkersize+ & 4 & integer & Highlight marker size. \\
+\verb+layout+ & & \multicolumn{2}{p{9cm}}{Specification of the layout which defines how the channels are arranged, may be one of two options:} \\
+	      & & layout structure & Pre-computed layout structure (see FieldTrip reference for \texttt{prepare\_layout}). \\
+	      & & string & Name of an ascii layout file with extension \texttt{*.lay}. \\ \bottomrule
+\end{tabularx} \label{tab:cfg2DPLOT}
+\end{table}
+
+
+  

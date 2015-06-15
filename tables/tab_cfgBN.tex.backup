@@ -1,0 +1,53 @@
+\begin{table}[H]
+\small \centering
+\caption[Parameters \texttt{cfgBN}]{Parameters for the configuration structure \texttt{cfgBN} of the function \texttt{TRENTOOL2BrainNet.m} (TRENTOOL Version 3.0).} 
+\begin{tabular}{p{2cm}p{5cm}p{9cm}} \toprule
+\textbf{field name} & \textbf{data type} & \textbf{description} \\ \midrule
+\verb+MNIcoord+ & integer array [nx3] & MNI coordinates (x,y,z) of $n$ sources or channels.\\
+\rowcolor{Gray}
+\verb+labels+ & cell array [nx1] & Cell array containing strings with source/channel labels. \textbf{NOTE}: Labels should not contain blanks, this causes BrainNet Viewer to chrash. Also, make sure to use the same ordering of labels for the fields \texttt{.labels} and \texttt{.MNIcoord} and the TEpermvalues table in \texttt{TEpermtest} (you may use the label information in \texttt{TEpermtest.cfg.channel}).\\
+\verb+filename+ & string & filename for output files \texttt{*.node} and \texttt{*.edge}, you may specify a filename only (string), which causes the function to save both files to the current folder, or you can specify a whole filepath ([filepath]/[filename]).\\
+\rowcolor{Gray}
+\verb+nodeCol+ & integer vector [nx1] & BrainNet gives you the option to color nodes according to                 the values in this vector (size [N 1]), see BrainNet Manual. If you want the nodes to have the same color, provide a vector with ones.\\ 
+\verb+nodeSize+ & \texttt{'log'} & Scale of the prediction time $u$ axis in the figure, logarthmic (\texttt{'log'}) of linear (\texttt{'lin'})\\ 
+\verb+edgeCol+ & \texttt{'log'} & Scale of the prediction time $u$ axis in the figure, logarthmic (\texttt{'log'}) of linear (\texttt{'lin'})\\ \bottomrule
+\label{tab:cfgUPLOT}
+\end{tabular}
+\end{table}
+
+% * INPUT
+%   TEpermtest = structure containing TE results, returned by TRENTOOL
+%                functions TEsurrogatestats.m, TEsurrogatestats_ensemble.m 
+%                or InteractionDelayReconstruction_analyze.m
+%
+%  cfg. 	 Configuration structure with fields
+%   MNIcoord   = MNI coordinates (x,y,z) of the sources, array with size 
+%                [N 3], where N is the number of sources
+%   labels     = source labels, cell array with size [N 1] - Not that
+%                sources shouldn't contain spaces (causes BrainNet to
+%                crash), the function will remove any spaces from the 
+%                labels cell array. WARNING: You may use the labels
+%                provided in TEpermtest.cfg.channel, if you use different
+%                labels, make sure, they are in the same order as the
+%                channels in TEpermtest.cfg.channel!
+%   filename   = filename for output files *.node and *.edge, you may
+%                specify a filename only (string), which causes the 
+%                function to save both files to the current folder, or you 
+%                can specify a whole filepath ([filepath]/[filename])
+%
+%
+%   THE FOLLOWING INPUTS ARE OPTIONAL:
+%
+%  cfg.
+%   nodeCol    = BrainNet gives you the option to color nodes according to
+%                the values in this vector (size [N 1]), see BrainNet
+%                Manual. If you want the nodes to have the same color,
+%                provide a vector with ones (default).
+%   nodeSize   = BrainNet gives you the option to size nodes according to
+%                the values in this vector (size [N 1]), see BrainNet
+%                Manual. If you want the nodes to have the same size,
+%                provide a vector with ones (default).
+%   edgeCol    = BrainNet gives you the option to color edges according to
+%                the values in this vector (size [N 1]), see BrainNet
+%                Manual. If you want the edges to have the same color,
+%                provide a vector with ones (default).

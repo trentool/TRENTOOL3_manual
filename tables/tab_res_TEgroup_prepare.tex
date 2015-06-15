@@ -1,0 +1,14 @@
+\begin{table}[H]
+\small
+\caption[Results \texttt{.groupprepare}]{Fields in the structure \texttt{.groupprepare} added to data prepared from group analysis by the function \texttt{TEgroup\_prepare.m} (TRENTOOL Version 3.3)} 
+\begin{tabularx}{\textwidth}{lX} \toprule
+\textbf{field name} & \textbf{description} \\ \midrule
+\verb+max_dim+ & Maximum embedding dimension over all subjects, channels and $u$. This will be used for TE estimation in individual subjects.\\
+\rowcolor{Gray}
+\verb+min_nrtrials+ & Minimum number of trials over all subjects.\\
+\verb+code+ & Code added to all subjects. This field is checked by \verb+TEgroup_stats.m+ to make sure, all data sets were prepared within the same run of \verb+TEgroup_prepare.m+\\
+\rowcolor{Gray}
+\verb+predicttimevec_u+ & Vector with assumed interaction delays  $u$. This will be used for TE estimation to overwrite any conflicting information. \\
+\bottomrule
+\end{tabularx} \label{tab:groupprepare}
+\end{table}

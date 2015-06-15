@@ -1,0 +1,13 @@
+\begin{table}[H]
+\small \centering
+\caption[Parameters \texttt{cfgUPLOT}]{Parameters for the configuration structure \texttt{cfgUPLOT} of the function \texttt{InteractionDelayReconstruction\_plot.m} (TRENTOOL Version 3.3). All parameters have to be given as strings.} 
+\begin{tabularx}{\textwidth}{p{2cm}p{2cm}X} \toprule
+\textbf{field name} & \textbf{default value} & \textbf{description} \\ \midrule
+\verb+pattern+ & & Filename pattern with MATLAB compatible wildcards (such as ?,*), that hold the TEpermtest structures, e.g. \texttt{'subj*TEpermtest\_output.mat'}.\\
+\rowcolor{Gray}
+\verb+directory+ & & Directory (path) of the files.\\
+\verb+graphics+ & \texttt{'view'} & Figure configuration, test view (\texttt{'view'}) or publication ready (\texttt{'pp\_ready'}).\\
+\rowcolor{Gray}
+\verb+scaletype+ & \texttt{'log'} & Scale of the prediction time $u$ axis in the figure, logarthmic (\texttt{'log'}) of linear (\texttt{'lin'})\\ \bottomrule
+\end{tabularx} \label{tab:cfgUPLOT}
+\end{table}

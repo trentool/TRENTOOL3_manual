@@ -1,0 +1,28 @@
+%   cfg                   configuration structure  with fields
+%
+%   cfg.pattern           the Filename pattern with MATLAB compatible 
+%                         wildcards (such as ?,*)
+%
+%   cfg.directory         The directory where the files conatining the
+%                         results of TEpermtest are stored
+%   cfg.graphics    =     'pp_ready' or 'view'
+%                         The configuration for paper ready/ testview,
+%                         default 'view'
+%   cfg.scaletype   =     'log' or 'lin' - the predictiontime u scale
+%                          (default 'log')
+
+
+\begin{table}[H]
+\small \centering
+\caption[Parameters \texttt{cfgUPLOT}]{Parameters for the configuration structure \texttt{cfgUPLOT} of the function \texttt{InteractionDelayReconstruction\_plot.m} (TRENTOOL Version 3.0). All parameters have to be given as strings.} 
+\begin{tabular}{p{2cm}p{9cm}} \toprule
+\textbf{field name} & \textbf{default value} & \textbf{data type} & \textbf{description} \\ \midrule
+\verb+pattern+ & the Filename pattern with MATLAB compatible wildcards (such as ?,*), e.g. \texttt{'subj*TEpermtest_output.mat'}.\\
+\rowcolor{Gray}
+\verb+directory+ & \\
+\verb+graphics+ & \\
+\rowcolor{Gray}
+\verb+scaletype+ &  \\
+\label{tab:cfgUPLOT}
+\end{tabular}
+\end{table}

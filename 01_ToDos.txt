@@ -1,0 +1,13 @@
+========================================================================
+TRENTOOL Manual - ToDos
+========================================================================
+
+2014/06/13/	TE analysis may now be run without source embedding
+2014/10/11/	TEprepare now allows scalar values for ragtau and ragdim
+2014/10/01/	field MIcalc tells TRENTOOL to run/not to run MI calculation 
+		(makes everything faster) --> add this also to the example scripts
+2014/10/20/	TEgroup_stats.m now returns the mean u value for 
+		statistically different connections 
+2014/10/21/	TEsurrogatestats_binom has three new output parameters
+
+all changes in vs. 3.3 (i already fixed the TSTool references)

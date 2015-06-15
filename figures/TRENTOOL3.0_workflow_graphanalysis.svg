@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="725.53857"
+   height="257.7518"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="graphanalysis.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path4085"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="454.86338"
+     inkscape:cy="62.923574"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1150"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(965.94018,-55.067854)">
+    <path
+       style="color:#000000;fill:#97e583;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.3029438;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -964.02117,55.219326 176.08581,0 0,41.691776 -176.08581,0 z"
+       id="rect2985"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#97e583;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.4233692;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -965.71432,99.794785 176.08581,0 0,81.426305 -176.08581,0 z"
+       id="rect2985-1" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-951.42859"
+       y="74.362183"
+       id="text3041"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3045"
+         x="-951.42859"
+         y="74.362183">TEprepare.m</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-951.42859"
+       y="129.36218"
+       id="text3102"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3104"
+         x="-951.42859"
+         y="129.36218">TEsurrogatestats.m</tspan></text>
+    <path
+       style="color:#000000;fill:#8ab7de;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.3029438;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -965.78871,270.97628 176.0858,0 0,41.69178 -176.0858,0 z"
+       id="rect2985-0"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-951.42859"
+       y="292.22238"
+       id="text4045"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4047"
+         x="-951.42859"
+         y="292.22238">TEgraphanalysis.m</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m -877.67141,174.84267 0,100.40916"
+       id="path4076"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#97e583;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.4233692;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -767.15768,99.794785 176.08582,0 0,81.426305 -176.08582,0 z"
+       id="rect2985-8" />
+    <path
+       style="color:#000000;fill:#97e583;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.3029438;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -767.29488,55.219326 176.0858,0 0,41.691775 -176.0858,0 z"
+       id="rect2985-3"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-754.70233"
+       y="129.84218"
+       id="text3102-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3104-6"
+         x="-754.70233"
+         y="129.84218">TEsurrogatestats_</tspan><tspan
+         sodipodi:role="line"
+         x="-754.70233"
+         y="144.84218"
+         id="tspan3199">  ensemble.m</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-754.70233"
+       y="74.362183"
+       id="text3041-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3045-5"
+         x="-754.70233"
+         y="74.362183">TEprepare.m</tspan></text>
+    <path
+       style="color:#000000;fill:#8ab7de;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.3029438;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -767.29488,270.97628 176.0858,0 0,41.69178 -176.0858,0 z"
+       id="rect2985-05"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4049"
+       y="292.22238"
+       x="-754.70233"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       xml:space="preserve"><tspan
+         y="292.22238"
+         x="-754.70233"
+         id="tspan4051"
+         sodipodi:role="line">TEgraphanalysis.m</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4522"
+       d="m -679.14617,174.84267 0,100.40916"
+       style="fill:none;stroke:#000000;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#97e583;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.71900415;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -570.11614,55.4602 329.20931,0 0,125.61493 -329.20931,0 z"
+       id="rect2985-6-5" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-558"
+       y="75.466179"
+       id="text3077"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-558"
+         y="75.466179"
+         id="tspan3171">InteractionDelayReconstruction_calculate.m</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#97e583;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.47927976;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -570.13799,187.15794 329.49672,0 0,55.76705 -329.49672,0 z"
+       id="rect2985-8-2" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-558"
+       y="212.7412"
+       id="text3077-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3169"
+         x="-558"
+         y="212.7412">InteractionDelayReconstruction_analyze.m</tspan></text>
+    <g
+       id="g4681"
+       transform="translate(0,-9.1923882)">
+      <rect
+         style="color:#000000;fill:#e3e880;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.20000005;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4673"
+         width="293.44901"
+         height="24.748739"
+         x="-556.52533"
+         y="99.27343" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3041-31"
+         y="113.9638"
+         x="-548.86932"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+         xml:space="preserve"><tspan
+           y="113.9638"
+           x="-548.86932"
+           id="tspan3045-9"
+           sodipodi:role="line">TEprepare.m</tspan></text>
+      <rect
+         style="color:#000000;fill:#e3e880;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.20000005;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4633"
+         width="143.54268"
+         height="52.325901"
+         x="-406.61871"
+         y="126.85059" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3102-5"
+         y="155.43155"
+         x="-399.37753"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+         xml:space="preserve"><tspan
+           y="155.43155"
+           x="-399.37753"
+           id="tspan3104-5"
+           sodipodi:role="line">TEsurrogatestats.m</tspan></text>
+      <rect
+         y="126.85059"
+         x="-556.52533"
+         height="52.325901"
+         width="143.54268"
+         id="rect4631"
+         style="color:#000000;fill:#e3e880;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.20000005;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3102-0-9"
+         y="149.02354"
+         x="-548.49731"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+         xml:space="preserve"><tspan
+           y="149.02354"
+           x="-548.49731"
+           id="tspan3104-6-6"
+           sodipodi:role="line">TEsurrogatestats_</tspan><tspan
+           id="tspan3199-1"
+           y="164.02354"
+           x="-548.49731"
+           sodipodi:role="line">  ensemble.m</tspan></text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#8ab7de;fill-opacity:1;fill-rule:nonzero;stroke:#97e583;stroke-width:0.41389605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -570.17069,271.03161 329.5621,0 0,41.58111 -329.5621,0 z"
+       id="rect2985-8-2-2" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="-557.24402"
+       y="292.22238"
+       id="text4053"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4055"
+         x="-557.24402"
+         y="292.22238">TEgraphanalysis.m</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m -405.38963,238.48228 0,36.76955"
+       id="path4524"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

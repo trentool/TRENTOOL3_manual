@@ -1,0 +1,29 @@
+\begin{table}[H]
+\centering
+\caption[Results \texttt{TEbinomstats}]{Results provided in the structure \texttt{TEbinomstats} returned by '\texttt{TEsurrogate_binomstats.m}' (TRENTOOL Version 3.3)}
+\begin{tabularx}{\textwidth}{lL{2.5cm}L{2.5cm}X}\toprule
+\textbf{field name} & \textbf{dimension} & \textbf{data type} & \textbf{description} \\ \midrule
+\texttt{sgncmb} & & cell array of strings & labels of channel combinations (source -> target) \\
+\rowcolor{Gray}
+\texttt{TEsteps} & & string & information on functions used on the current data set \\
+\texttt{occurrences} & [channelcombi x 1] & integer & vector with counts of the occurrences for each link \\
+\rowcolor{Gray}
+\texttt{bino_cdf} & [n\_subjects x 1] & integer & cumulative probability for each number of occurrences (from 0 to a maximum of the number of subjects) \\
+\texttt{occurr\_thresh} & scalar & float & minimum number of occurrences for the binomial test to become statistically significant \\
+\rowcolor{Gray}
+\texttt{TEpermvalues} & [no. channel combinations x 5(6$^a$)] & doubles & matrix with results of binomial testing of individual channel combinations. For each channel combination (i.e. each row), the matrix holds the following information: \\ 
+&&&\\
+& \textbf{Column} & \textbf{Description} & \textbf{Values} \\ \midrule
+ &1 & p-value & $0$ to $1$ \\
+ \rowcolor{Gray}
+ &2 & stat. significance & $1$ significant at the provided alpha level, $0$ not significant \\ 
+ &3 & stat. significance after CMC$^b$& $1$ significant at the provided alpha level after CMC, $0$ not significant after CMC\\ 
+ \rowcolor{Gray}
+ &4 & mean TE value & raw mean TE value \\ 
+ &5 & volume conduction & indicates the presence ($1$) or absense ($0$) of volume conduction (is set to $NaN$ for ensemble method) \\
+ \rowcolor{Gray}
+ &6$^a$ & mean $u$ & $u$ in msec, mean over $u$ values in single subjects\\ \bottomrule
+\multicolumn{4}{p{\textwidth}}{$^a$ a sixth column containing the optimal $u$ is added only if interaction delays are reconstructed for the data (using \texttt{InteractionDelayReconstruction\_analyze.m}, see section \ref{sec:interaction_delays})}\\
+\multicolumn{4}{p{\textwidth}}{$^b$ correction for multiple comparisons}\\
+\end{tabularx} \label{tab:TEbinom}
+\end{table}

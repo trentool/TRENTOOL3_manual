@@ -1,0 +1,11 @@
+\begin{table}[H]
+\small
+\caption[Parameters \texttt{cfgGA}]{Parameters for the configuration structure \texttt{cfgGA} of the functions \texttt{TEgraphanalysis.m} (TRENTOOL Version 3.0)} 
+\begin{tabularx}{\textwidth}{p{2cm}p{1.1cm}p{2cm}X} \toprule
+\textbf{field name} &  \textbf{data type} & \textbf{units} & \textbf{description} \\ \midrule
+\verb+threshold+ & integer & milli-seconds & tolerance that is used when looking for alternative paths\\
+\rowcolor{Gray}
+\verb+cmc+ & integer & bool & consider links significant after correction for multiple comparisons (1) or links significant without correction (0)\\
+\bottomrule
+\end{tabularx} \label{tab:cfgGA}
+\end{table}

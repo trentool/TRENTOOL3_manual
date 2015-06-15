@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\caption[Results \texttt{TEpermtest}]{Results provided in the structure \texttt{TEpermtest} saved to disk/returned by '\texttt{TEsurrogatestats.m}' and '\texttt{TEsurrogatestats\_ensemble.m}', (TRENTOOL Version 3.3)}
+\begin{tabularx}{\textwidth}{lL{2.5cm}L{2.5cm}X}\toprule
+\textbf{field name} & \textbf{dimension} & \textbf{data type} & \textbf{description} \\ \midrule
+\texttt{dimord} & & string & dimensions of TEpermvalues \\
+\rowcolor{Gray}
+\texttt{cfg} & & structure & configuration file used to TE estimation (\texttt{cfgTESS}, see table \ref{tab:cfgTESS}) \\
+\texttt{sgncmb} & & cell array of strings & labels of channel combinations (source -> target) \\
+\rowcolor{Gray}
+\texttt{numpermutation} & scalar & integer & number of permutations used for statistical testing \\
+\texttt{ACT} & & structure & structure including \texttt{.act} with the ACT matrix ([channelcombi x 2 x trial]) \\
+\rowcolor{Gray}
+\texttt{nr2cmc} & scalar & integer & number of of multiple comparisons that was corrected for \\
+\texttt{TEprepare} & & structure & results of the function TEprepare from the input data \\ 
+\rowcolor{Gray}
+\texttt{TEpermvalues} & [no. channel combinations x 5(6$^a$)] & doubles & matrix with results of permutation testing for individual channel combinations. For each channel combination (i.e. each row), the matrix holds the following information: \\ 
+&&&\\
+& \textbf{Column} & \textbf{Description} & \textbf{Values} \\ \midrule
+ &1 & p-value & $0$ to $1$ \\
+ \rowcolor{Gray}
+ &2 & stat. significance & $1$ significant at the provided alpha level, $0$ not significant \\ 
+ &3 & stat. significance after CMC$^b$& $1$ significant at the provided alpha level after CMC, $0$ not significant after CMC\\ 
+ \rowcolor{Gray}
+ &4 & mean difference & raw difference between empirical and surrogate data \\ 
+ &5 & volume conduction & indicates the presence ($1$) or absense ($0$) of volume conduction (is set to $NaN$ for ensemble method) \\
+ \rowcolor{Gray}
+ &6$^a$ & optimal $u$ & $u$ in msec, available only after  was ran on data\\ \bottomrule
+\multicolumn{4}{p{\textwidth}}{$^a$ a sixth column containing the optimal $u$ is added only if interaction delays are reconstructed for the data (using \texttt{InteractionDelayReconstruction\_analyze.m}, see section \ref{sec:interaction_delays})}\\
+\multicolumn{4}{p{\textwidth}}{$^b$ correction for multiple comparisons}\\
+\end{tabularx} \label{tab:TEpermtest}
+\end{table}

@@ -1,0 +1,20 @@
+\begin{table}[H]
+\small \centering
+\caption[Parameters \texttt{cfgGSTAT}]{Parameters for the configuration structure \texttt{cfgGSTAT} of the function \texttt{TEgroup\_stats.m} (TRENTOOL Version 3.0)} 
+\begin{tabularx}{\textwidth}{p{2cm}p{1.5cm}p{1.1cm}X} \toprule
+\textbf{field name} & \textbf{default value} & \textbf{data type} & \textbf{description} \\ \midrule
+\verb+design+ & & integer array & design matrix with dimension 2 by no. data sets, where one row contains the data set number and one row encodes the independent variable (see example in table \ref{tab:ex_designmatrix})\\
+\rowcolor{Gray}
+\verb+uvar+ & & integer & row in \verb+cfgGSTAT.design+ that contains the data set number (unit variable)\\
+\verb+ivar+ & & integer & row in \verb+cfgGSTAT.design+ that contains the independent variable (encoding of group or condition)\\
+\rowcolor{Gray}
+\verb+alpha+ &  0.05 & double & significance level for statistical permutation test \\
+\verb+numpermutation+ & 190100 & integer &  number of permutations in permutation test \\
+\rowcolor{Gray}
+\verb+permstatstype+ & mean & string &  statistic for permutation test: 'mean' usse the distribution of the differences between group means; 'depsamplesT' or 'indepsamplesT' uses the distribution of the (dependent or independent) t-values computed from both group means\\
+\verb+tail+ & 2 & integer &  one- or two tailed test for significance (1 or 2) \\
+\rowcolor{Gray}
+\verb+correctm+ & 'FDR' & string &  correction method used for correction of the multiple comparison problem - False discovery rate 'FDR' or Bonferroni correction 'BONF'\\
+\verb+fileidout+ & & string &  output path and the first part of the output filename\\ \bottomrule
+\end{tabularx} \label{tab:cfgGSTAT}
+\end{table}

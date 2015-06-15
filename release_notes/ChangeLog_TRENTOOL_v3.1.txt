@@ -1,0 +1,65 @@
+%% TRENTOOL 3.1 Release Notes - 14/04/2014 - www.trentool.de 
+%
+%
+%	Main features:
+%		- bugfix in TEcallGPUsearch.m
+%		- group statistic
+%		- fixes tau accidentally becoming 0 for small ACT values (overwrite with 1)
+%		- minor fixes in TEprepare.m, TEsurrogatestats_binomstats.m
+
+
+
+TEcallGPUsearch.m
+	PW: added the substraction of eps from the radius for the range search (this was missing before)
+	PW: added an option to turn off MI calculation (cfgTESS.MIcalc, saves computing time)
+	PW: corrected the output in ncount.n_chunks
+	
+InteractionDelayReconstruction_calculate.m
+	PW: function now checks whether group statistics are requested
+
+InteractionDelayReconstruction_analyze.m
+	PW: the field .TEmat is now kept in the output as this field is needed for group statistics, .TEmat is also returned as field in TEpermstats
+	PW: the field .groupprepare is now kept in the output as this field is needed for group statistics
+
+TEprepare.m
+	PW: function now keeps data labels (needed for the group statistic)
+	PW: included a check whether timeindex(2) >= timeindex(1)
+	PW: maxact is now taken over the trials used for analysis only (before, this was a simple max() over ALL trials, also those excluded due to high ACT)
+
+TEgraphanalysis.m
+	PW: the user may now choose wheter corrected or uncorrected links are used for  graph correction (option .cmc in the cfg structure)
+	PW: added .graphanalysis.triangles to the output, may be used for trivariate TE in a later step
+
+Group statistics
+	PW: adjusted all group functions to work with the updated workflow (InteractionDelayReconstruction etc.)
+
+TRENTOOL2BrainNet.m
+	PW: I wrote and added this function to the branch, allows to export TRENTOOL results to be used with BrainNet Viewer 
+
+TEcmc.m
+	PW: corrected an error in the function, that prevented the switch to BONF correction for small channel numbers
+
+TEsetRandStream.m
+	PW: added this function, sets the rand stream according to the user's MATLAB version -> this is now used in TEsurrogatestats_ensemble.m and TEperm.m
+
+TEpvalue.m
+	PW: if p is 0 (because the test statistic is actually the largest value in the surrogate distribution), it is replaced by 1/numpermutation
+
+TEcalc.m
+	PW: MI calculation is now optional (depending on the field cfgTESS.MIcalc)
+
+TEcmc.m
+	PW: bugfix - BONF correction in case of too little channel combinations was not effective before
+
+example_script_ensemblemethod.m
+	PW: included MIcalc as an option in cfgTESS
+
+TEsurrogatestats_binomstats.m
+	MW: bugfix, p-value was corrected by number of subjects instead of number of channel combinations
+
+TEsurrogatestats_ensemble.m
+	PW: function now accepts .MIcalc (optional MI calculation) and .GPUid (multiple GPU devices) as parameters
+	PW: it is now checked, if tau is zero (after multiplying the opt. ragtau with the ACT), this may happen for small ACT and ragtau values, if tau is zero set to one
+
+transferentropy.m
+	PW: it is now checked, if tau is zero (after multiplying the opt. ragtau with the ACT), this may happen for small ACT and ragtau values, if tau is zero set to one

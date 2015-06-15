@@ -1,0 +1,15 @@
+%% TRENTOOL 3.2 Release Notes - 13/06/2014 - www.trentool.de 
+%
+%
+%	Main features:
+%		- TE analysis withour source embedding
+
+
+
+TEsurrogatestats_ensemble.m
+	PW: the function may now be called with the parameter 'cfg.embedsource' set to 'yes'/'no' to control the source embedding for TE analysis; cfg.embedsource = 'no' 
+
+
+TEembedding_noSourceEmb.m
+	PW: added this function to allow for the source embedding to be switched off
+	

@@ -1,0 +1,99 @@
+\begin{lstlisting}
+%% set paths
+
+TRENTOOLpath = './TRENTOOL3';
+addpath(TRENTOOLpath); 
+addpath('./fieldtrip-20120703');
+ft_defaults;
+
+%% get data
+
+% find relevant mat files and collect file names in a cell structure
+files    = dir('subj_*.mat');
+
+%% specify cfgTEP (parameters for TEprepare.m) 
+
+cfgTEP                  = [];
+cfgTEP.Path2TSTOOL      = './OpenTSTOOL';	% path to TSTOOL
+cfgTEP.TEcalctype       = 'VW_ds'; 		% use the SPO estimator
+
+load(files(1).name);
+cfgTEP.channel       = data.label; 	% analyze all combinations of channels in the field label
+cfgTEP.predicttime_u = 12;  		% known interaction delay
+cfgTEP.toi  	     = [min(data.time{1,1}),max(data.time{1,1})]; % analysis window/time of interest
+
+cfgTEP.maxlag      = 10000;   % range for ACT computation
+cfgTEP.actthrvalue = 120;     % treshold for ACT 
+cfgTEP.minnrtrials = 12;      % minimum acceptable number of trials
+
+% optimizing embedding
+cfgTEP.optimizemethod ='ragwitz';   % criterion used
+cfgTEP.ragdim         = 2:8;        % criterion dimension
+cfgTEP.ragtaurange    = [0.5 1];    % range for tau 
+cfgTEP.ragtausteps    = 15;         % steps for ragwitz tau steps
+cfgTEP.repPred        = 1000;       % points to be predicted
+
+% kernel-based TE estimation
+cfgTEP.flagNei = 'Mass' ;           % neigbour analyse type
+cfgTEP.sizeNei = 4;                 % neigbours to analyse
+
+%% prepare data for TE estimation
+
+for i=1:length(files)
+
+  load(files(i).name);
+  dataprepared = TEprepare(cfgTEP,data);
+  
+  save([files(i).name(1:end-4) '_prepared.mat'],'dataprepared');
+end
+
+
+%% specify cfgTESS (parameters for TEsurrogatestats.m) 
+
+cfgTESS = [];
+
+cfgTESS.optdimusage = 'indivdim';   % dimension to use
+
+% options for statistical testing
+cfgTESS.tail           = 1;
+cfgTESS.numpermutation = 5e4;
+cfgTESS.shifttesttype  = 'TEshift>TE';
+cfgTESS.surrogatetype  = 'trialshuffling';
+
+% addiotional condition for TE calculation
+%cfgTESS.extracond = 'Faes_Method';	% extracond and shift testing are mutually exclusive
+
+files = dir('*_prepared.mat');
+
+for i=1:length(files)
+  
+  % load prepared data
+  load(files(i).name)
+  
+  % filename under which auxiliary data is saved by TEsurrogatestats.m
+  cfgTESS.fileidout = ['results/ ' files(i).name(1:end-13)];
+  
+  TEresult = TEsurrogatestats(cfgTESS,dataprepared);
+  
+  save([cfgTESS.fileidout '_analyzed.mat'],'TEresult');
+end  
+
+
+%% Graph analysis (optional) 
+
+files = dir('*_analyzed.mat');
+
+% specify parameters for graph analysis
+cfgGA = [];
+cfgGA.threshold = 3; % threshold for alternative path search in msec
+
+for i=1:length(files)
+  
+  % load prepared data
+  load(files(i).name)
+  
+  TEresult_GA = TEgraphanalysis(cfgGA,TEresult);
+  
+  save([cfgTESS.fileidout '_analyzed_GA.mat'],'TEresult_GA');
+end  
+\end{lstlisting}

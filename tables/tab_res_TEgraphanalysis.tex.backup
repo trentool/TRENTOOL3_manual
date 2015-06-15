@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\caption[Results \texttt{TEgraphanalysis.m}]{Output of \texttt{TEgraphanalysis.m} (TRENTOOL Version 3.0): The table TEpermvalues is modified for links that are identified as potentially spurious} 
+\begin{tabularx}{\textwidth}{p{1cm}p{6cm}X} \toprule
+\multicolumn{3}{l}{Modifications in \texttt{TEpermvalues}} \\
+\multicolumn{2}{l}{\textbf{Column}} & \textbf{Set to} \\ \midrule
+1 & p-value 	& 1 \\
+\rowcolor{Gray}
+2 & significance at the prescribed alpha & 0 \\
+3 & significance after correction for multiple comparisons & 0 \\
+\rowcolor{Gray}
+4 & mean difference & NaN \\
+5 & link type & type of spurious interaction: 2 = cascade effect; 3 = cascade effect triangle; 4 = common drive link triangle. \\
+\rowcolor{Gray}
+6 & interaction delay & 0 \\
+\multicolumn{3}{l}{} \\
+\multicolumn{3}{l}{Fields in substructure \texttt{graphanalysis}:} \\
+\multicolumn{2}{l}{\textbf{field name}} & \textbf{description} \\ \hline
+\multicolumn{2}{l}{\texttt{n\_vertices}}  & number of vertices \\ 
+\rowcolor{Gray}
+\multicolumn{2}{l}{\texttt{n\_edges}}    & number of edges \\ 
+\multicolumn{2}{l}{\texttt{density}}      & graph density, defined as $\frac{E}{(V*(V-1))}$, where V = \verb+n_vertices+ and E = \verb+n_edges+\\ 
+\rowcolor{Gray}
+\multicolumn{2}{l}{\texttt{threshold}}   & user provided threshold (see table \ref{tab:cfgGA})\\ \bottomrule
+\end{tabularx} \label{tab:graphanalysis_results}
+\end{table}
