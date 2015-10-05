@@ -514,21 +514,21 @@ Note: Using the functions \verb&InteractionDelayReconstruction_*& is the recomme
 
 \subsubsection{\texttt{InteractionDelayReconstruction\_calculate.m}} 
 
-\paragraph*{Description} Wrapper function that estimates TE for varying assumed interaction delays $u$ specified by the user (see eq. \ref{eq:TE_u}). The function scans provided delays $u$, i.e. it loops over the TRENTOOL core functions (see section \ref{sec:core_functions}) by iteratively calling the functions \verb&TEprepare.m& and \verb&TEsurrogatestats.m& (\verb&TEsurrogatestats_ensemble.m& respectively) with varying values for $u$ (Figure \ref{fig:workflow_delayReconstruction}). 
+\paragraph*{Description} Wrapper function that estimates TE using optimized values for the interaction delay(see eq. \ref{eq:TE_u}). The function (1) prepares the data (calls \verb&TEprepare.m&); (2) optimizes interaction delays by estimating TE for all assumed values $u$ and finding the value $u$ that maximizes TE; (3) performes a statistical test on TE values estimated using the optimized interaction delay Figure \ref{fig:workflow_delayReconstruction}). TE values are estimated by the functions \verb&TEsurrogatestats.m& (see also section \ref{sec:core_functions}) or \verb&TEsurrogatestats_ensemble.m& (see also section \ref{sec:ensemble_method}).
 
 \paragraph*{Usage} \texttt{TGA\_results = InteractionDelayReconstruction\_calculate(cfgTEP,cfgTESS,\\data);}
 
 \paragraph*{Input} \texttt{data} contains input data in the FieldTrip raw data format (see section \ref{sec:overview} and table \ref{tab:input_data}), \verb&cfgTEP& (table \ref{tab:cfgTEP}) and \verb&cfgTESS& (table \ref{tab:cfgTESS}) contain configuration structures with analysis parameters for functions \verb&TEprepare.m& and \verb&TEsurrogatestats.m&, that are called inside the function.
 
-\paragraph*{Output} The interaction delay and the associated statistics are returned as a structure \texttt{TEperm-\\test} similar to the structure returned by \verb&TEsurrogatestats.m& (table \ref{tab:TEpermtest}). Additionally, the table in the field \verb&.TEpermvalues& contains a sixth column that provides the optimal $u$ for each channel combination. Intermediate results for each assumed interaction delay $u$ (outputs \texttt{TEpermvalues} and \texttt{TEresult}) are saved to disk using the string in \texttt{cfgTESS.fileidout} as prefix. Intermediate results may be visualized with the function \verb&InteractionDelayReconstruction\_plotting& (see next subsection).
+\paragraph*{Output} The interaction delay and the associated statistics are returned as a structure \texttt{TEperm-\\test} similar to the structure returned by \verb&TEsurrogatestats.m& (table \ref{tab:TEpermtest}). Additionally, the table in the field \verb&.TEpermvalues& contains a sixth column that provides the optimal $u$ for each channel combination. Final results (output \texttt{TEpermtest}) are saved to disk using the string in \texttt{cfgTESS.fileidout} as prefix. These results may be visualized using the function \verb&InteractionDelayReconstruction\_plotting& (see next subsection).
 
 \subsubsection{\texttt{InteractionDelayReconstruction\_plotting.m}} 
 
-\paragraph*{Description} Function plots intermediate results from TE analysis with \verb&InteractionDelayReconstruction_calculate.m&. The function plots TE values against assumed delays $u$ for each channel combination in the data set. 
+\paragraph*{Description} Function plots final results from TE analysis with \verb&InteractionDelayReconstruction_calculate.m&. The function plots TE values against assumed delays $u$ for each channel combination in the data set. 
 
-\paragraph*{Usage} \texttt{InteractionDelayReconstruction\_plotting(cfgUPLOT);}
+\paragraph*{Usage} \texttt{InteractionDelayReconstruction\_plotting(cfgUPLOT, TEpermtest);}
 
-\paragraph*{Input} \texttt{cfgUPLOT} (table \ref{tab:cfgUPLOT}) contains the path to intermediate results as well as a file pattern that allows the function to identify data to be plottet. The structure further contains parameters for plotting.
+\paragraph*{Input} \texttt{cfgUPLOT} (table \ref{tab:cfgUPLOT}) contains a configuration structure with plotting options. \texttt{TEpermtest} is the output of \texttt{InteractionDelayReconstruction\_calculate.m}.
 
 \paragraph*{Output} The function plots normalized TE values ($TE/TE_{max}$) for each channel combination against assumed interaction delays u. 
 
