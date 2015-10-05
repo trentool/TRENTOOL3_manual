@@ -34,4 +34,8 @@
 *.brf
 
 # editor files (?)
-.backup
+*.backup
+
+# vim/linux files
+*.directory
+*.swp
