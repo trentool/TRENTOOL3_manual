@@ -20,6 +20,9 @@
 *.brf
 *.run.xml
 
+# listings
+*.lol
+
 ## Build tool auxiliary files:
 *.fdb_latexmk
 *.synctex
