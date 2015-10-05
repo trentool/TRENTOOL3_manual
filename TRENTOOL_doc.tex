@@ -585,7 +585,7 @@ data by shuffling the repetitions of the target time series,
 
 When using the ensemble method, the use of the Faes-Method is mandatory (\texttt{cfgTESS.extracond = 'Faes\_Method'}) and the shift test has to be switched off (\texttt{cfgTESS.shifttest = 'no';}). The use of the Faes method prevents the detection of information transfer due to volume conduction (a shift test can not be used for the ensemble method as TE values are no longer calculated per trial).
  
-Additionally, when using the ensemble method, the strategy for the creation of surrogate data (section \ref{sec:TEprepare}) has to be set to \verb+'trialperm'+ (\texttt{cfgTEP.surrogatetype = 'trialperm'}).
+Additionally, when using the ensemble method, the strategy for the creation of surrogate data (section \ref{sec:TEprepare}) has to be set to \verb+'trialperm'+ (\texttt{cfgTEP.surrogatetype = 'trialperm'}), which simply permutes trials.
 
 \paragraph*{Output} The output structure \texttt{TEpermtest} is similar to the output of \verb&TEsurrogatestats.m& (table \ref{tab:TEpermtest}).
 
