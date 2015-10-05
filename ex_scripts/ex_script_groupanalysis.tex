@@ -3,7 +3,7 @@
 
 TRENTOOLpath = './TRENTOOL3';
 addpath(TRENTOOLpath); 
-addpath('./fieldtrip-20120703');
+addpath('./fieldtrip-20150928');
 ft_defaults;
 
 %% get data
@@ -109,6 +109,7 @@ cfgGSTAT = [];
 cfgGSTAT.design    = [1 2 3 4 5 6 7 8; 1 1 1 1 2 2 2 2];
 cfgGSTAT.uvar      = 1;
 cfgGSTAT.ivar      = 2;
+cfgGSTAT.permstatstype = 'indepsamplesT';
 cfgGSTAT.fileidout = 'test_groupstats';
 
 % run group statistics
