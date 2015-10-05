@@ -689,6 +689,8 @@ Subjects are assigned to groups using a design matrix specified in \texttt{cfgGS
 
 \paragraph*{Input} \verb&TEpermtest_cond1& and \verb&TEpermtest_cond2& are two output structures that contain TE values estimated from two data sets, where each data set represents one of two conditions, recorded in a single subject. TE values have to be estimated with the group analysis work flow (data preparation with \texttt{TEgroup\_prepare.m}, TE estimation with \verb&InteractionDelayReconstruction_calculate.m&). \verb&cfgCSTAT& contains a configuration structure with analysis parameters (table \ref{tab:cfgCSTAT}).
 
+\paragraph*{Output} The function \texttt{TEgroup\_conditionstatssingle.m} writes a files with suffix \texttt{TEpermtestcondsingle_output.mat} to disc (location is specified in \texttt{cfgCSTAT.fileidout}). The output is astructure \texttt{TEpermtestcondsingle}, with the statistical testing. Results are provided in the same fashion as for single subject analysis (see table \ref{tab:TEpermtest}), i.e. for each channel combination results of the permutation test are in a table (\texttt{.TEpermvalues}). Additionally, the output structure contains information on the statistical test and a field \texttt{.TEgroupprepare}, that provides the results of \texttt{TEgroup\_prepare.m}.
+
 
 \subsection{Graph correction for cascade effects and simple common drive} \label{sec:graphanalysis}
 
