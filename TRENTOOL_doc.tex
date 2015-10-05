@@ -619,7 +619,7 @@ Binomial testing of single subject result is provided in the function \texttt{TE
 
 \subsection{Group analysis in TRENTOOL} \label{sec:groupanalysis}
 
-TRENTOOL allows to statistically test for differences in TE values between two sets of data: either data obtained from two groups, data obtained from two conditions in one group, or data obtained from two conditions in a single subject (Figures \ref{fig:condstats} and \ref{fig:groupanalysis}) \cite{lindner2011}. If two conditions are compared within a single subject, a sufficient number of trials has to be recorded for each condition (see also section \ref{sec:numperm}). To not introduce a bias in the raw TE values and thus to make TE values comparable in a statistical test between groups, identical embedding dimensions have to be used for TE estimation in individual data sets. To find a common embedding dimension over all data sets, the function \verb&TEgroup_prepare.m& has to be used on all data sets that are supposed to enter the analysis. The function calls \verb&TEprepare.m& on each data set and finds the common, i.e., maximum embedding dimension over all data. This common embedding dimension is then used in the following TE estimation, using the work flow for delay reconstruction (section \ref{sec:interaction_delays}). Resulting TE values can then be tested for statistical differences between both groups of data using \verb&TEgroup_stats.m& or \verb&TE_conditionstatssingle.m&. See also the example script \ref{lst:groupanalysis}.
+TRENTOOL allows to statistically test for differences in TE values between two sets of data: either data obtained from two groups, data obtained from two conditions in one group, or data obtained from two conditions in a single subject (Figures \ref{fig:condstats} and \ref{fig:groupanalysis}) \cite{lindner2011}. If two conditions are compared within a single subject, a sufficient number of trials has to be recorded for each condition (see also section \ref{sec:numperm} in the appendix). To not introduce a bias in the raw TE values and thus to make TE values comparable in a statistical test between groups, identical embedding dimensions have to be used for TE estimation in individual data sets. To find a common embedding dimension over all data sets, the function \verb&TEgroup_prepare.m& has to be used on all data sets that are supposed to enter the analysis. The function calls \verb&TEprepare.m& on each data set and finds the common, i.e., maximum embedding dimension over all data. This common embedding dimension is then used in the following TE estimation, using the work flow for delay reconstruction (section \ref{sec:interaction_delays}). Resulting TE values can then be tested for statistical differences between both groups of data using \verb&TEgroup_stats.m& or \verb&TE_conditionstatssingle.m&. See also the example script \ref{lst:groupanalysis}.
 
 \begin{figure}[H]	
 	\centering	
@@ -689,7 +689,7 @@ Subjects are assigned to groups using a design matrix specified in \texttt{cfgGS
 
 \paragraph*{Input} \verb&TEpermtest_cond1& and \verb&TEpermtest_cond2& are two output structures that contain TE values estimated from two data sets, where each data set represents one of two conditions, recorded in a single subject. TE values have to be estimated with the group analysis work flow (data preparation with \texttt{TEgroup\_prepare.m}, TE estimation with \verb&InteractionDelayReconstruction_calculate.m&). \verb&cfgCSTAT& contains a configuration structure with analysis parameters (table \ref{tab:cfgCSTAT}).
 
-\paragraph*{Output} The function \texttt{TEgroup\_conditionstatssingle.m} writes a files with suffix \texttt{TEpermtestcondsingle_output.mat} to disc (location is specified in \texttt{cfgCSTAT.fileidout}). The output is astructure \texttt{TEpermtestcondsingle}, with the statistical testing. Results are provided in the same fashion as for single subject analysis (see table \ref{tab:TEpermtest}), i.e. for each channel combination results of the permutation test are in a table (\texttt{.TEpermvalues}). Additionally, the output structure contains information on the statistical test and a field \texttt{.TEgroupprepare}, that provides the results of \texttt{TEgroup\_prepare.m}.
+\paragraph*{Output} The function \texttt{TEgroup\_conditionstatssingle.m} writes a files with suffix \texttt{TEpermtestcondsingle\_output.mat} to disc (location is specified in \texttt{cfgCSTAT.fileidout}). The output is astructure \texttt{TEpermtestcondsingle}, with the statistical testing. Results are provided in the same fashion as for single subject analysis (see table \ref{tab:TEpermtest}), i.e. for each channel combination results of the permutation test are in a table (\texttt{.TEpermvalues}). Additionally, the output structure contains information on the statistical test and a field \texttt{.TEgroupprepare}, that provides the results of \texttt{TEgroup\_prepare.m}.
 
 
 \subsection{Graph correction for cascade effects and simple common drive} \label{sec:graphanalysis}
@@ -796,6 +796,34 @@ The following analysis scripts show a comparisons of TE values between two group
 
 \newpage
 \section{Appendix} \label{sec:appendix}
+
+\subsection{Choosing the number of permutations for permutations testing} \label{sec:numperm}
+A number of permutations for statistical testing is required as a configuration parameter \verb&.numpermutation& for a series of TRENTOOL functions (e.g. \verb&TEsurrogatestats.m&, \verb&TEsurrogatestats_ensemble.m&, \verb&TEgroup_stats.m&). The number of permutations specifies how often two data sets are pooled and two new sets are drawn to calculate the test statistic and to then form the Null distribution. The \verb&.numpermutation& parameter can be set by the user or it can be omitted, in which case it is calculated automatically on the basis of the requested alpha level and the number of data sets. This calculation is done by \verb&\TEchecknumperm.m& and works as follows: The required number of permutations is chosen such that the minimum p-value that can be possibly calculated from the Null distribution is smaller than the alpha level (i.e. it is theoretically possible to obtain significant results). The minimum possible p-value is $1/numpermutation$, thus \verb&.numpermutation& is chosen such that the following equations holds:
+
+\[
+ \frac{1}{numpermutation} < \frac{1}{\alpha/c},
+\]
+
+where $\alpha$ is the requested alpha level of the statistical test, corrected for the number of multiple comparisons $c$. To be on the safe side, TRENTOOL multiplies the number of strictly necessary permutations by a factor 20.
+
+In a second step, \verb&.numpermutation& is checked for sanity. This check is done for values set by the user and for values calculated by \verb&\TEchecknumperm.m&. It is checked, whether the number of permutations requested/required by the (corrected) alpha level, is theoretically possible given the number of data sets to be tested. For two data sets, with $N_1$ and $N_2$ observations in each group, the number of possible permutations is 
+
+\[
+ \binom{N_1+N_2}{min(N_1,N_2)},
+\]
+
+for an independent test (determined by \verb&.permstatstype&), and
+
+\[
+ 2^{N_1} = 2^{N_2}
+\]
+
+for an dependent test (\verb&.permstatstype = 'depsamplesT'&).
+
+The function checks if the number of possible permutations is larger than the number of requested permutations. If this is not the case, a warning is issued.
+
+
+\subsection{TRENTOOL Input/Output}
 
 The following tables provide detailed information on input and output of the most common TRENTOOL functions. Input parameters are mandatory if no default values are provided. Curly brackets indicate MATLAB cell arrays, square brackets indicate numeric arrays. Note, that MATLAB uses row-major order for multidimensional arrays.
 
