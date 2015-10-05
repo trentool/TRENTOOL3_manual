@@ -32,3 +32,6 @@
 
 # hyperref
 *.brf
+
+# editor files (?)
+.backup
