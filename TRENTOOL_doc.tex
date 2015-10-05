@@ -619,7 +619,7 @@ Binomial testing of single subject result is provided in the function \texttt{TE
 
 \subsection{Group analysis in TRENTOOL} \label{sec:groupanalysis}
 
-TRENTOOL allows to statistically test for differences in TE values between two sets of data (either data obtained from two groups or data obtained from two conditions in one group, Figure \ref{fig:groupanalysis}) \cite{lindner2011}. To not introduce a bias in the raw TE values and thus to make TE values comparable in a statisical test between groups, identical embedding dimensions have to be used for TE estimation in individual data sets. To find a common embedding dimension over all data sets, the function \verb&TEgroup_prepare.m& executes \verb&TEprepare.m& on all data sets. The function then uses the maximum over all optimized embedding dimensions as the group embedding dimension to be used in the following TE estimation. TE is then estimated using the work flow for delay reconstruction (section \ref{sec:interaction_delays}), using either \verb&TEsurrogatestats.m& or \verb&TEsurrogatestats_ensemble.m& for TE estimation. Resulting TE values can then be tested for statistical differences between both groups of data using \verb&TEgroup_stats.m&. See also the example script \ref{lst:groupanalysis}.
+TRENTOOL allows to statistically test for differences in TE values between two sets of data: either data obtained from two groups, data obtained from two conditions in one group, or data obtained from two conditions in a single subject (Figures \ref{fig:condstats} and \ref{fig:groupanalysis}) \cite{lindner2011}. To not introduce a bias in the raw TE values and thus to make TE values comparable in a statistical test between groups, identical embedding dimensions have to be used for TE estimation in individual data sets. To find a common embedding dimension over all data sets, the function \verb&TEgroup_prepare.m& has to be used on all data sets that are supposed to enter the analysis. The function calls \verb&TEprepare.m& on each data set and finds the common, i.e., maximum embedding dimension over all data. This common embedding dimension is then used in the following TE estimation, using the work flow for delay reconstruction (section \ref{sec:interaction_delays}). Resulting TE values can then be tested for statistical differences between both groups of data using \verb&TEgroup_stats.m& or \verb&TE_conditionstatssingle.m&. See also the example script \ref{lst:groupanalysis}.
 
 \begin{figure}[H]	
 	\centering	
@@ -631,6 +631,17 @@ TRENTOOL allows to statistically test for differences in TE values between two s
 	}
 	\label{fig:groupanalysis}
 \end{figure} 
+
+\begin{figure}[H]	
+	\centering	
+ 		\includegraphics[scale=0.90]{figures/TRENTOOL3_condstatssingle.pdf}
+	\caption[TRENTOOL work flow for comparison of conditions]{TRENTOOL work flow for comparison of two conditions, withing a single subject: 
+	(A) Both data sets (one for each condition) have to be prepared for group analysis using the function \texttt{TEgroup\_prepare}, the function finds the maximum embedding dimension over all data sets/channel combinations and writes results to a field \texttt{groupprepare} in the data;
+	(B) TE is estimated from group-prepared data for both conditions, the function  \texttt{InteractionDelayReconstruction\_calculate.m} recognizes data prepared for group analysis and uses group parameters from \texttt{data\_groupprepared.groupprepare} for TE analysis;
+	(C) Raw TE values are compared between both conditions by means of permutation testing, results are written to disk.
+	}
+	\label{fig:condstats}
+\end{figure}
 
 
 \subsubsection{\texttt{TEgroup\_prepare.m}}
@@ -651,7 +662,7 @@ The function \verb&InteractionDelayReconstruction_calculate.m& recognizes data p
 
 \subsubsection{\texttt{TEgroup\_stats.m}}
 
-\paragraph*{Description} The function compares the raw TE values estimated for all data sets and channel combinations by means of a permutation testing \cite{maris2007,lindner2011}. 
+\paragraph*{Description} The function compares raw TE values estimated for all data sets and channel combinations by means of permutation testing \cite{maris2007,lindner2011}. 
 
 \paragraph*{Usage} \verb&TEgroup_stats(cfgGSTAT,fileCell_analyzed);& 
 
@@ -669,6 +680,14 @@ Subjects are assigned to groups using a design matrix specified in \texttt{cfgGS
 \end{table}
 
 \paragraph*{Output} The function \texttt{TEgroup\_stats.m} writes two files with suffixes \texttt{TE\_output.mat} and \texttt{TEpermtestgroup\_output.mat} to disc (location is specified in \texttt{cfgGSTAT.fileidout}). \texttt{TE\_output.mat} contains the raw TE values of both sets of data (\texttt{TEresult1} and \texttt{TEresult2}) as well as the mean over both sets (\texttt{TEresultmean}). \texttt{*TEpermtestgroup\_output.mat} contains the structure \texttt{TEpermtestgroup}, that holds the result of the statistical testing. Results are provided in the same fashion as for single subject analysis (see table \ref{tab:TEpermtest}), i.e. for each channel combination results of the permutation test are given in table form (\texttt{.TEpermvalues}). Additionally, the output structure contains a field \texttt{.TEgroupprepare}, that provides the results of \texttt{TEgroup\_prepare.m}.
+
+\subsubsection{\texttt{TEgroup\_conditionstatssingle.m}}
+
+\paragraph*{Description} The function compares raw TE values estimated for two conditions in a single subject by means of permutation testing \cite{maris2007,lindner2011}. See also Figure \ref{fig:condstats}.
+
+\paragraph*{Usage} \verb&TEgroup_conditionstatssingle(cfgCSTAT,TEpermtest_cond1,TEpermtest_cond2);& 
+
+\paragraph*{Input} \verb&TEpermtest_cond1& and \verb&TEpermtest_cond2& are two output structures that contain TE values estimated from two data sets, where each data set represents one of two conditions, recorded in a single subject. TE values have to be estimated with the group analysis work flow (data preparation with \texttt{TEgroup\_prepare.m}, TE estimation with \verb&InteractionDelayReconstruction_calculate.m&). \verb&cfgCSTAT& contains a configuration structure with analysis parameters (table \ref{tab:cfgCSTAT}).
 
 
 \subsection{Graph correction for cascade effects and simple common drive} \label{sec:graphanalysis}
@@ -793,6 +812,7 @@ The following tables provide detailed information on input and output of the mos
 
 % TEgroup_stats
 \input{tables/tab_cfgGSTAT} % parameters for cfgGSTAT
+\input{tables/tab_cfgCSTAT} % parameters for cfgCSTAT
 
 % TEgraphanalysis
 \input{tables/tab_cfgGA} % parameters for cfgGA

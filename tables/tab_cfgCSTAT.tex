@@ -1,0 +1,40 @@
+\begin{table}[H]
+\small \centering
+\caption[Parameters \texttt{cfgCSTAT}]{Parameters for the configuration structure \texttt{cfgCSTAT} of the function \texttt{TEgroup\_condstatssingle.m} (TRENTOOL Version 3.3)} 
+\begin{tabularx}{\textwidth}{p{2cm}p{1.5cm}p{1.1cm}X} \toprule
+\textbf{field name} & \textbf{default value} & \textbf{data type} & \textbf{description} \\ \midrule
+\verb+alpha+ &  0.05 & double & significance level for statistical permutation test \\
+\verb+numpermutation+ & 190100 & integer &  number of permutations in permutation test \\
+\rowcolor{Gray}
+\verb+permstatstype+ & mean & string &  statistic for permutation test: 'mean' usse the distribution of the differences between group means; 'depsamplesT' or 'indepsamplesT' uses the distribution of the (dependent or independent) t-values computed from both group means\\
+\verb+tail+ & 2 & integer &  one- or two tailed test for significance (1 or 2) \\
+\rowcolor{Gray}
+\verb+correctm+ & 'FDR' & string &  correction method used for correction of the multiple comparison problem - False discovery rate 'FDR' or Bonferroni correction 'BONF'\\
+\verb+fileidout+ & & string &  output path and the first part of the output filename\\ \bottomrule
+\end{tabularx} \label{tab:cfgCSTAT}
+\end{table}
+
+
+%   cfg: 
+%
+%   The configuration MUST contain:
+%   cfg.fileidout   = string for the output path and the first part of the 
+%                     output filename. The function will write a result 
+%                     file with the suffix 'TEpermtestcondsingle_output.mat' 
+%                     to disk  (containing the output of the statistical 
+%                     test).
+%
+%   Optional arguments:
+%
+%   cfg.tail        = 1 tail or 2 tailed test of significance (for the
+%                     permutation tests) (default = 2)
+%   cfg.permstatstype  = 'mean' to use the distribution of the mean
+%                     differences and 'depsamplesT' or
+%                    'indepsamplesT' for distribution of the
+%                     t-values. (default = 'mean')
+%   cfg.alpha       = significance level for statisatical shift test,
+%                     permutation test and correction for multiple
+%                     comparison (default = 0.05)
+%   cfg.correctm    = correction method used for correction of the multiple
+%                     comparison problem - False discovery rate 'FDR' or
+%                     Bonferroni correction 'BONF' (default = 'FDR')
