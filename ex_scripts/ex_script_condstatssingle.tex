@@ -1,0 +1,118 @@
+\begin{lstlisting}
+%% set paths
+
+TRENTOOLpath = './TRENTOOL3';
+addpath(TRENTOOLpath); 
+addpath('./fieldtrip-20150928');
+ft_defaults;
+
+%% get data
+
+% find relevant mat files and collect file names in a cell structure
+fileCell = {'subj_A_cond_1.mat' 'subj_A_cond_2.mat'};
+
+%% create cfg (as you would for single subject analysis)
+
+cfgTEGP                  = [];
+cfgTEGP.TEcalctype       = 'VW_ds'; 
+
+% get channel label from file, analyze all possible combinations
+load(files(1).name);
+cfgTEP.channel             = data.label;
+
+% specify u to be scanned
+cfgTEGP.predicttimemin_u    = 5;
+cfgTEGP.predicttimemax_u    = 17;
+cfgTEGP.predicttimestepsize = 2;
+
+% use the whole trial for analysis
+cfgTEP.toi = [min(data.time{1,1}),max(data.time{1,1})]; % time of interest
+
+% ACT estimation and constraints on allowed ACT(autocorelation time)
+cfgTEGP.maxlag      = 3*cfgTEGP.predicttimemax_u;   % range for ACT computation
+cfgTEGP.actthrvalue = 40;                           % treshold for ACT 
+cfgTEGP.minnrtrials = 12;                           % minimum acceptable number of trials
+
+% optimizing embedding
+cfgTEGP.optimizemethod ='ragwitz';   % criterion used
+cfgTEGP.ragdim         = 4:8;        % criterion dimension
+cfgTEGP.ragtaurange    = [0.2 0.4];  % range for tau [0.5 1]
+cfgTEGP.ragtausteps    = 15;         % steps for ragwitz tau steps
+cfgTEGP.repPred        = 100;        % points used for optimization the embedding dimensions
+
+% kernel-based TE estimation
+cfgTEGP.flagNei = 'Mass' ;           % neigbour analyse type
+cfgTEGP.sizeNei = 4;                 % neigbours to analyse
+
+cfgTEGP.ensemblemethod  = 'no';
+cfgTEGP.outputpath  = '/results/';
+
+%% run TEgroup_prepare
+
+TEgroup_prepare(cfgTEGP,fileCell);
+
+%% run analysis on group prepared data
+
+cfgTESS		      = [];
+cfgTESS.shifttest     = 'yes';
+cfgTESS.optdimusage   = 'indivdim';   % dimension to use
+cfgTESS.surrogatetype = 'trialshuffling';
+
+% go to output path of previous analysis step (this is where TEgroup_prepare saved the prepared data)
+cd(cfgTEGP.outputpath)
+
+% load and analyze prepared data individually
+for i=1:length(fileCell)
+        
+    load(fileCell(i).name)
+    cfgTESS.fileidout = strcat(cfgTEGP.outputpath,fileCell(i).name(1:end-4));
+    
+    TEresult = InteractionDelayReconstruction_calculate(cfgTEGP,cfgTESS,data);
+    
+    save([cfgTEGP.outputpath fileCell(i).name(1:end-4) '_calc.mat'],'TEresult');
+    clear TEresult data;
+    
+end
+
+%% perform graph analysis (optional)
+
+files = dir('*_calc.mat');
+
+
+% settings for graph analysis
+cfgGA = [];
+cfgGA.threshold = 1;
+cfgGA.cmc       = 1;
+
+for i=1:length(files)
+    
+    load(files(i).name);
+    
+    % correct for spurious information transfer
+    TEresult_GA = TEgraphanalysis(cfgGA,TEresult);
+    
+    save([cfgTEGP.outputpath files(i).name(1:end-9) '_result.mat'],'TEresult_GA');
+    
+end
+
+
+%% run compare TE values from both conditions
+
+% collect individually analyzed data in a file cell
+cd(cfgTEGP.outputpath);
+files_TEpermtest = dir('*_result.mat');
+cond1 = load(files_TEpermtest(1).name);
+cond2 = load(files_TEpermtest(2).name);
+
+
+
+% define analysis parameters
+cfgCSTAT = [];
+cfgCSTAT.permstatstype = 'indepsamplesT';
+cfgCSTAT.alpha 	       = 0.05;
+cfgCSTAT.tail 	       = 1;
+cfgCSTAT.fileidout = 'test_condstatssingle';
+
+% run statistics
+TEgroup_conditionstatssingle(cfgCSTAT, cond1.TEpermtest, cond2.TEpermtest);
+\end{lstlisting}

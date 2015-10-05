@@ -619,7 +619,7 @@ Binomial testing of single subject result is provided in the function \texttt{TE
 
 \subsection{Group analysis in TRENTOOL} \label{sec:groupanalysis}
 
-TRENTOOL allows to statistically test for differences in TE values between two sets of data: either data obtained from two groups, data obtained from two conditions in one group, or data obtained from two conditions in a single subject (Figures \ref{fig:condstats} and \ref{fig:groupanalysis}) \cite{lindner2011}. To not introduce a bias in the raw TE values and thus to make TE values comparable in a statistical test between groups, identical embedding dimensions have to be used for TE estimation in individual data sets. To find a common embedding dimension over all data sets, the function \verb&TEgroup_prepare.m& has to be used on all data sets that are supposed to enter the analysis. The function calls \verb&TEprepare.m& on each data set and finds the common, i.e., maximum embedding dimension over all data. This common embedding dimension is then used in the following TE estimation, using the work flow for delay reconstruction (section \ref{sec:interaction_delays}). Resulting TE values can then be tested for statistical differences between both groups of data using \verb&TEgroup_stats.m& or \verb&TE_conditionstatssingle.m&. See also the example script \ref{lst:groupanalysis}.
+TRENTOOL allows to statistically test for differences in TE values between two sets of data: either data obtained from two groups, data obtained from two conditions in one group, or data obtained from two conditions in a single subject (Figures \ref{fig:condstats} and \ref{fig:groupanalysis}) \cite{lindner2011}. If two conditions are compared within a single subject, a sufficient number of trials has to be recorded for each condition (see also section \ref{sec:numperm}). To not introduce a bias in the raw TE values and thus to make TE values comparable in a statistical test between groups, identical embedding dimensions have to be used for TE estimation in individual data sets. To find a common embedding dimension over all data sets, the function \verb&TEgroup_prepare.m& has to be used on all data sets that are supposed to enter the analysis. The function calls \verb&TEprepare.m& on each data set and finds the common, i.e., maximum embedding dimension over all data. This common embedding dimension is then used in the following TE estimation, using the work flow for delay reconstruction (section \ref{sec:interaction_delays}). Resulting TE values can then be tested for statistical differences between both groups of data using \verb&TEgroup_stats.m& or \verb&TE_conditionstatssingle.m&. See also the example script \ref{lst:groupanalysis}.
 
 \begin{figure}[H]	
 	\centering	
@@ -777,14 +777,19 @@ To account for the shorter analysis windows and the reduction in data points per
 
 The example script \texttt{example\_script\_ensemblemethod.m} and data \texttt{exampledata/Lorenz\_1->2\_45ms.mat} can be found in the current TRENTOOL version.
 
-\lstset{language=matlab,caption={Example script for interaction delay reconstruction in TRENTOOL.},label=lst:delayreconstruction_GPU,breaklines=true,float=H,mathescape=true}
+\lstset{language=matlab,caption={Example script for interaction delay reconstruction in TRENTOOL.}, label=lst:delayreconstruction_GPU, breaklines=true, float=H,mathescape=true}
 \input{ex_scripts/ex_script_delayreconstruction_GPU}
 
 
 \subsection{Example group analysis}
 
-\lstset{language=matlab,caption={Example script for group analysis in TRENTOOL.},label=lst:groupanalysis,breaklines=true,float=H,mathescape=true}
+The following analysis scripts show a comparisons of TE values between two groups of data (e.g. from two pools of subjects or from two conditions recorded in different subjects) and a comparison of TE values estimated under two conditions in a single subject.
+
+\lstset{language=matlab,caption={Example script for group analysis in TRENTOOL.}, label=lst:groupanalysis, breaklines=true, float=H, mathescape=true}
 \input{ex_scripts/ex_script_groupanalysis}
+
+\lstset{language=matlab,caption={Example script for the comparison of two conditions within a single subject in TRENTOOL.}, label=lst:condstats, breaklines=true, float=H, mathescape=true}
+\input{ex_scripts/ex_script_condstatssingle}
 
 
 \newpage
