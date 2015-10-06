@@ -823,6 +823,26 @@ for an dependent test (\verb&.permstatstype = 'depsamplesT'&).
 The function checks if the number of possible permutations is larger than the number of requested permutations. If this is not the case, a warning is issued.
 
 
+\subsection{Setting output verbosity} \label{sec:verbosity}
+The verbosity of console output can be set with the configuration parameter \verb&cfgTEP.verbosity& (input to \verb&TEprepare.m&). Each console output in TRENTOOL is associated with a level of detail. A output is only printed to the console if it has the same or a lesser level of detail as requested in \verb&cfgTEP.verbosity&. See table \ref{tab:verbosity} for possible settings.
+
+\begin{table}[H]
+\small
+\caption[Output Verbosity Levels]{Output verbosity levels defined by \texttt{cfgTEP.verbosity}.} 
+\begin{tabular}{p{2.5cm}p{10cm}} \toprule
+\textbf{string} & \textbf{description} \\ \midrule
+\verb+'info_major'+ & notifications of major analysis steps (e.g. data preparation, reconstruction of interaction delays)\\
+\rowcolor{Gray}
+\verb+'info_minor'+ & notification of minor analysis steps (e.g. results of data preparation, generation of permutations)\\
+\verb+'debug_coarse'+ & debug information, includes technical details and intermediate results\\
+\rowcolor{Gray}
+\verb+'debug_fine'+ & fine debug information, includes technical details and detailed intermediate results\\
+\bottomrule
+\label{tab:verbosity}
+\end{tabular}
+\end{table}
+
+
 \subsection{TRENTOOL Input/Output}
 
 The following tables provide detailed information on input and output of the most common TRENTOOL functions. Input parameters are mandatory if no default values are provided. Curly brackets indicate MATLAB cell arrays, square brackets indicate numeric arrays. Note, that MATLAB uses row-major order for multidimensional arrays.
