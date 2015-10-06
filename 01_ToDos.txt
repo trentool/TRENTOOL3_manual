@@ -10,4 +10,18 @@ TRENTOOL Manual - ToDos
 		statistically different connections 
 2014/10/21/	TEsurrogatestats_binom has three new output parameters
 
-all changes in vs. 3.3 (i already fixed the TSTool references)
+all changes in vs. 3.3 (I already fixed the TSTool references)
+
+2015/06/ 	Cleaned up output of IDR_calculate
+2015/06/	Made IDR_plotting to work with new output
+2015/07/	surroate type for ensemblemethod is now called 'trialshuffling' to be consistent with the CPU method
+2015/07/	cfg.site = 'ffm' is now an option
+2015/10/01 	removed legacy code
+2015/10/01 	new conditionstatssingle function
+2015/10/01 	minor changes in TEgroup_stats -> check changelogs and docu
+2015/10/01 	TEconsoleoutput handles output verbosity
+2015/10/02 	TEchecknumperm handles the calculation of permutations
+2015/10/05	everything tested with fieldtrip-lite-20150928
+2015/10/05	update example scripts
+
+all changes in vs. 3.4 (Release Version)
