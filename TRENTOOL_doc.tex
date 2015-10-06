@@ -826,16 +826,19 @@ The function checks if the number of possible permutations is larger than the nu
 \subsection{Setting output verbosity} \label{sec:verbosity}
 The verbosity of console output can be set with the configuration parameter \verb&cfgTEP.verbosity& (input to \verb&TEprepare.m&). Each console output in TRENTOOL is associated with a level of detail. A output is only printed to the console if it has the same or a lesser level of detail as requested in \verb&cfgTEP.verbosity&. See table \ref{tab:verbosity} for possible settings.
 
+Note that errors and warnings are issued even if console output is switched off (\verb&'none'&).
+
 \begin{table}[H]
 \small
 \caption[Output Verbosity Levels]{Output verbosity levels defined by \texttt{cfgTEP.verbosity}.} 
 \begin{tabular}{p{2.5cm}p{10cm}} \toprule
 \textbf{string} & \textbf{description} \\ \midrule
+\verb+'none'+ & no output except for warnings and errors \\
+\rowcolor{Gray}
 \verb+'info_major'+ & notifications of major analysis steps (e.g. data preparation, reconstruction of interaction delays)\\
+\verb+'info_minor'+ & notification of minor analysis steps (e.g. results of data preparation, generation of permutations), \textbf{default}\\
 \rowcolor{Gray}
-\verb+'info_minor'+ & notification of minor analysis steps (e.g. results of data preparation, generation of permutations)\\
 \verb+'debug_coarse'+ & debug information, includes technical details and intermediate results\\
-\rowcolor{Gray}
 \verb+'debug_fine'+ & fine debug information, includes technical details and detailed intermediate results\\
 \bottomrule
 \label{tab:verbosity}
